@@ -25,8 +25,8 @@ function SimplePackageLoader(pkgs::Array{ASCIIString,1},
 end
 
 """
-`SimpleFavorites()` will load my favorite `Simple`
-graph theory packages, namely:
+`SimpleFavorites(verbose::Bool=true)` will load my favorite 
+`Simple` graph theory packages, namely:
 
 * `SimpleGraphs`
 * `SimpleGraphAlgorithms`
@@ -35,7 +35,7 @@ graph theory packages, namely:
 
 as well as `ShowSet` and `PyPlot`.
 """
-function SimpleFavorites(verbose::Bool=false)
+function SimpleFavorites(verbose::Bool=true)
   packages = [
   "SimpleGraphs"
   "SimpleGraphRepresentations"
