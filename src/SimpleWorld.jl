@@ -25,7 +25,7 @@ function SimplePackageLoader(pkgs::Array{ASCIIString,1},
 end
 
 """
-`SimpleFavorites(verbose::Bool=true)` will load my favorite 
+`SimpleFavorites(verbose::Bool=true)` will load my favorite
 `Simple` graph theory packages, namely:
 
 * `SimpleGraphs`
@@ -46,3 +46,6 @@ function SimpleFavorites(verbose::Bool=true)
   ]
   SimplePackageLoader(packages,verbose)
 end
+
+println("Easily load favorite graph theory packages with")
+println("SimpleFavorites()")
