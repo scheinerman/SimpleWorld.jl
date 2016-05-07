@@ -46,6 +46,3 @@ function SimpleFavorites(verbose::Bool=true)
   ]
   SimplePackageLoader(packages,verbose)
 end
-println("-"^66)
-println("Easily load favorite graph theory packages with SimpleFavorites()")
-println("-"^66)
