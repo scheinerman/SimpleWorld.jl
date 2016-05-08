@@ -27,3 +27,14 @@ and add the following line to `~/.juliarc.jl`:
 ```julia
 include(".julia/v0.4/SimpleWorld/src/SimpleWorld.jl")
 ```
+
+## Supporting function
+
+The `SimpleFavorites` function depends on `SimplePackageLoader`. In a sense
+this function behaves like the `using` command in Julia. Instead of
+`using PackageName` one may, instead, invoke
+`SimplePackageLoader("PackageName")`. An optional second argument
+(called `verbose`) controls if an informational message is printed.
+
+`SimplePackageLoader` may also be called with a 1-dimensional array
+(i.e., a list) of package names.
