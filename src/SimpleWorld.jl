@@ -41,6 +41,9 @@ function SimpleFavorites(verbose::Bool=true)
   "SimpleGraphRepresentations"
   "SimpleGraphDrawings"
   "SimpleGraphAlgorithms"
+  "SimpleGF2"
+  "SimplePosets"
+  "SimplePosetAlgorithms"
   "ShowSet"
   "PyPlot"
   ]
