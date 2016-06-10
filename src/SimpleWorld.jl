@@ -26,12 +26,15 @@ end
 
 """
 `SimpleFavorites(verbose::Bool=true)` will load my favorite
-`Simple` graph theory packages, namely:
+`Simple` packages, namely:
 
 * `SimpleGraphs`
 * `SimpleGraphAlgorithms`
 * `SimpleGraphDrawings`
 * `SimpleGraphRepresentations`
+* `SimpleGF2`
+* `SimplePosets`
+* `SimplePosetAlgorithms`
 
 as well as `ShowSet` and `PyPlot`.
 """
