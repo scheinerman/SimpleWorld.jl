@@ -1,5 +1,97 @@
 # SimpleWorld
 
+## Welcome
+
+This is a starting point for my collection of Julia modules for
+graph theory computing (and related topics) available on
+github at https://github.com/scheinerman.
+
+Here is a brief overview of my modules:
+
+#### Graph Theory modules
+
++ `SimpleGraphs`: Defines the `SimpleGraph` and
+  `SimpleDigraph` types together with a variety of constructors,
+  functions for manipulating the graphs (e.g. adding/deleting
+  vertices/edges), and functions to ascertain properties of these
+  graphs (such as shortest paths between given vertices).
+
++ `SimpleGraphDrawings`: Provides the `SimpleGraphDrawing` type that
+  wraps around a `SimpleGraph` and functions for drawing/visualizing
+  graphs.
+
++ `SimpleGraphAlgorithms`: Additional functions whose operation relies
+  on integer linear programming.
+
++ `SimpleGraphRepresentations`: Intersection graphs and the like.
+
+#### Paritally ordered set modules
+
++ `SimplePosets`: Provides the `SimplePoset` type for working with
+  partially ordered sets.
+
++ `SimplePosetAlgorithms`: Additional functions for the `SimplePoset`
+  type. These functions rely on integer linear programming.
+
+#### More useful modules
+
+These are useful in their own right and some of the `Simple`
+modules rely on them:
+
++ `SimpleGF2`: Defines the `GF2` type which represents an element
+from the finite field GF(2); that is, the mod 2 field consisting
+of just the numbers 0 and 1. This package includes standard
+arithmetic and extensions for matrices.
+
++ `ClosedIntervals`: Defines the `ClosedInterval` data type
+that represent closed intervals of real numbers (or integers).
+Includes some basic functions and operations on closed intervals.
+
++ `Permutations`: Defines the `Permutation` data type and
+functions/operations for dealing with permutations of
+finite sets of the form {1,2,...,n}.
+
++ `ShowSet`: Loading this module overrides the usual way Julia
+displays sets. The usual way Julia displays a `Set` (or `IntSet`)
+looks like this:
+```julia
+julia> A = Set([1,2,3])
+Set([2,3,1])
+```
+After `using ShowSet` it looks like this:
+```julia
+julia> A = Set([1,2,3])
+{1,2,3}
+```
+
+#### Dependencies
+
+My modules use functionality from several standard Julia
+packages available here: http://pkg.julialang.org/. These include:
+
++ `MathProgBase`
++ `JuMP`
++ `Optim`
++ `PyPlot`
++ `DataStructures`
++ `Iterators`
++ `Polynomials`
++ `GraphLayout`
++ `Memoize`
+
+### Installation
+
+These modules can be obtained with a Julia command that
+looks like this:
+
+```julia
+Pkg.clone("https://github.com/scheinerman/SimpleGraphs.jl.git")
+```
+and likewise for the other modules.
+
+## Loading the `Simple` modules
+
+
 This repository provides the function `SimpleFavorites` that loads
 all my favorite graph theory (and related) packages.
 
