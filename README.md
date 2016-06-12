@@ -121,6 +121,8 @@ and add the following line to `~/.juliarc.jl`:
 ```julia
 include(".julia/v0.4/SimpleWorld/src/SimpleWorld.jl")
 ```
+A sample `.julirc.jl` file is included in the `src` directory of this
+repository.
 
 ## Supporting function
 

@@ -22,23 +22,14 @@ function SimplePackageLoader(pkgs::Array{ASCIIString,1},
   for p in pkgs
     SimplePackageLoader(p,verbose)
   end
+  nothing
 end
 
 """
-`SimpleFavorites(verbose::Bool=true)` will load my favorite
-`Simple` packages, namely:
-
-* `SimpleGraphs`
-* `SimpleGraphAlgorithms`
-* `SimpleGraphDrawings`
-* `SimpleGraphRepresentations`
-* `SimpleGF2`
-* `SimplePosets`
-* `SimplePosetAlgorithms`
-
-as well as `ShowSet` and `PyPlot`.
+`list_of_favorite_packages()` returns a list of the
+packages to be loaded when `SimpleFavorites()` is called.
 """
-function SimpleFavorites(verbose::Bool=true)
+function list_of_favorite_packages()
   packages = [
   "SimpleGraphs"
   "SimpleGraphRepresentations"
@@ -50,5 +41,14 @@ function SimpleFavorites(verbose::Bool=true)
   "ShowSet"
   "PyPlot"
   ]
-  SimplePackageLoader(packages,verbose)
+  return packages
+end
+
+"""
+`SimpleFavorites(verbose::Bool=true)` will load my favorite
+`Simple` packages. The list can be obtained using
+`list_of_simnple_packages()`.
+"""
+function SimpleFavorites(verbose::Bool=true)
+  SimplePackageLoader(list_of_favorite_packages(),verbose)
 end
