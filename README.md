@@ -83,6 +83,7 @@ all my favorite graph theory (and related) packages.
 When Julia starts up, we just have to give the command `SimpleFavorites()`
 and we see this:
 ```julia
+using SimplePartitions
 using SimpleGraphs
 using SimpleGraphRepresentations
 using SimpleGraphDrawings
