@@ -56,6 +56,8 @@ After `using ShowSet` it looks like this:
 julia> A = Set([1,2,3])
 {1,2,3}
 ```
++ `SimpleTools`: Miscellaneous, useful functions that don't have 
+a natural home.
 
 ### Dependencies
 
