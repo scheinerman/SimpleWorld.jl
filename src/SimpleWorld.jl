@@ -42,6 +42,7 @@ function list_of_favorite_packages()
   "SimplePosetAlgorithms"
   "ShowSet"
   "PyPlot"
+  "SimpleCombinatorics"
   ]
   return packages
 end
@@ -49,7 +50,7 @@ end
 """
 `SimpleFavorites(verbose::Bool=true)` will load my favorite
 `Simple` packages. The list can be obtained using
-`list_of_simnple_packages()`.
+`list_of_favorite_packages()`.
 """
 function SimpleFavorites(verbose::Bool=true)
   SimplePackageLoader(list_of_favorite_packages(),verbose)

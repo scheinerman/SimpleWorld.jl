@@ -38,6 +38,7 @@ from the finite field GF(2); that is, the mod 2 field consisting
 of just the numbers 0 and 1. This package includes standard
 arithmetic and extensions for matrices.
 + `SimplePartitions`: Work with set partitions.
++ `SimpleCombinatorics`: Counting functions.
 + `ClosedIntervals`: Defines the `ClosedInterval` data type
 that represent closed intervals of real numbers (or integers).
 Includes some basic functions and operations on closed intervals.
@@ -56,7 +57,7 @@ After `using ShowSet` it looks like this:
 julia> A = Set([1,2,3])
 {1,2,3}
 ```
-+ `SimpleTools`: Miscellaneous, useful functions that don't have 
++ `SimpleTools`: Miscellaneous, useful functions that don't have
 a natural home.
 
 ### Dependencies
@@ -83,21 +84,7 @@ This repository provides the function `SimpleFavorites` that loads
 all my favorite graph theory (and related) packages.
 
 When Julia starts up, we just have to give the command `SimpleFavorites()`
-and we see this:
-```julia
-using SimplePartitions
-using SimpleGraphs
-using SimpleGraphRepresentations
-using SimpleGraphDrawings
-using SimpleGraphAlgorithms
-using SimpleGF2
-using SimplePosets
-using SimplePosetAlgorithms
-using ShowSet
-WARNING: Method definition show(Base.IO, Base.Set) in module Base ...
-WARNING: Method definition show(Base.IO, Base.IntSet) in module Base ...
-using PyPlot
-```
+and we see the packages as they get loaded.
 
 ## Installation
 
