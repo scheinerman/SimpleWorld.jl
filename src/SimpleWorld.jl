@@ -43,6 +43,7 @@ function list_of_favorite_packages()
   "ShowSet"
   "PyPlot"
   "SimpleCombinatorics"
+  "SimpleRandom"
   ]
   return packages
 end

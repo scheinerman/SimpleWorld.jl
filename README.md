@@ -39,6 +39,7 @@ of just the numbers 0 and 1. This package includes standard
 arithmetic and extensions for matrices.
 + `SimplePartitions`: Work with set partitions.
 + `SimpleCombinatorics`: Counting functions.
++ `SimpleRandom`: Create random things.
 + `ClosedIntervals`: Defines the `ClosedInterval` data type
 that represent closed intervals of real numbers (or integers).
 Includes some basic functions and operations on closed intervals.
