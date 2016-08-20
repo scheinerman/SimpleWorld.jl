@@ -11,7 +11,7 @@ function SimplePackageLoader(pkg_name::ASCIIString,
         verbose::Bool=false)
   command = "using $pkg_name"
   if verbose
-    println(command)
+    info(command)
   end
   eval(parse(command))
   nothing
