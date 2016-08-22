@@ -56,3 +56,32 @@ end
 function SimpleFavorites(verbose::Bool=true)
   SimplePackageLoader(list_of_favorite_packages(),verbose)
 end
+
+
+
+"""
+`box_my_text(line)` prints out a single line of text embedded in a
+box consisting of corner and connector characters.
+
+```
+julia> box_my_text("Hello")
+┌───────┐
+│ Hello │
+└───────┘
+```
+"""
+function box_my_text(line::ASCIIString)
+  UL = "$(Char(9484))"
+  UR = "$(Char(9488))"
+  LL = "$(Char(9492))"
+  LR = "$(Char(9496))"
+  HOR = "$(Char(9472))"
+  VER = "$(Char(9474))"
+  SPA = " "
+
+  n = length(line)
+  println(UL * HOR^(n+2) * UR)
+  println(VER * SPA * line * SPA * VER)
+  println(LL * HOR^(n+2) * LR)
+  nothing
+end
