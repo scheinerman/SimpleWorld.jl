@@ -60,6 +60,7 @@ julia> A = Set([1,2,3])
 ```
 + `SimpleTools`: Miscellaneous, useful functions that don't have
 a natural home.
++ `SimpleTropical`: An implementation of tropical (min-plus) arithmetic.
 
 ### Dependencies
 
