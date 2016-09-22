@@ -17,8 +17,7 @@ function SimplePackageLoader(pkg_name::String,
   nothing
 end
 
-function SimplePackageLoader(pkgs::Array{String,1},
-  verbose::Bool=false)
+function SimplePackageLoader(pkgs,verbose::Bool=false)
   for p in pkgs
     SimplePackageLoader(p,verbose)
   end
