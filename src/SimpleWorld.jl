@@ -7,7 +7,7 @@ Instead of `using SomePackage` we can instead call
 
 This can also be called with a list of package names.
 """
-function SimplePackageLoader(pkg_name::ASCIIString,
+function SimplePackageLoader(pkg_name::String,
         verbose::Bool=false)
   command = "using $pkg_name"
   if verbose
@@ -17,7 +17,7 @@ function SimplePackageLoader(pkg_name::ASCIIString,
   nothing
 end
 
-function SimplePackageLoader(pkgs::Array{ASCIIString,1},
+function SimplePackageLoader(pkgs::Array{String,1},
   verbose::Bool=false)
   for p in pkgs
     SimplePackageLoader(p,verbose)
@@ -70,7 +70,7 @@ julia> box_my_text("Hello")
 └───────┘
 ```
 """
-function box_my_text(line::ASCIIString)
+function box_my_text(line::String)
   UL = "$(Char(9484))"
   UR = "$(Char(9488))"
   LL = "$(Char(9492))"
