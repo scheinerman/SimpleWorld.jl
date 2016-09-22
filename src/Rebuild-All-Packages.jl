@@ -65,8 +65,9 @@ end
 
 function load_my_pkgs()
   for pkg in my_packages
+    println(pkg)
     try
-      load-mine(pkg)
+      load_mine(pkg)
     end
   end
   nothing
