@@ -42,7 +42,6 @@ julia_packages=[
 "LaTeXStrings",
 "Plots",
 "Polynomials",
-"Homebrew",
 "Permutations",
 "IJulia"
 ]
