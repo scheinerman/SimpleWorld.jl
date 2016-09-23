@@ -16,6 +16,7 @@ my_packages = [
 "SimpleRandom",
 "SimpleTropical",
 "RiemannComplexNumbers",
+"Permutations",
 "Bijections",
 "ClosedIntervals",
 "LatexPrint",
@@ -42,7 +43,6 @@ julia_packages=[
 "LaTeXStrings",
 "Plots",
 "Polynomials",
-"Permutations",
 "IJulia"
 ]
 

@@ -38,10 +38,8 @@ function list_of_favorite_packages()
   "SimpleGraphAlgorithms"
   "SimpleGF2"
   "SimplePosets"
-  "SimplePosetAlgorithms"
   "ShowSet"
   "PyPlot"
-  "SimpleCombinatorics"
   "SimpleRandom"
   ]
   return packages
