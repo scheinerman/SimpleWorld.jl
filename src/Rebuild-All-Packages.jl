@@ -28,6 +28,7 @@ my_packages = [
 julia_packages=[
 "Graphs",
 "Distributions",
+"Combinatorics",
 "DataStructures",
 "GraphLayout",
 "Iterators",
