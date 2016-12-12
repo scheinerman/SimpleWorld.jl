@@ -22,6 +22,7 @@ my_packages = [
 "LatexPrint",
 "ShowSet",
 "Mods",
+"Multisets",
 "Lifts"
 ]
 
