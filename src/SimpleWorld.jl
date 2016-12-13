@@ -41,6 +41,7 @@ function list_of_favorite_packages()
   "ShowSet"
   "PyPlot"
   "SimpleRandom"
+  "Multisets"
   ]
   return packages
 end
