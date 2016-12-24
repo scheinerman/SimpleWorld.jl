@@ -40,6 +40,7 @@ function list_of_favorite_packages()
   "SimplePosets"
   "ShowSet"
   "PyPlot"
+  "Primes"
   "SimpleRandom"
   "Multisets"
   ]
