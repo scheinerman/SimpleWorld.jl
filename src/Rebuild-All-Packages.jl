@@ -40,6 +40,7 @@ julia_packages=[
 "Optim",
 "GLPK",
 "GLPKMathProgInterface",
+"Cbc",
 "ProgressMeter",
 "PyPlot",
 "PyCall",
