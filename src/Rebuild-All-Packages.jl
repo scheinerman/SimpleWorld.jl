@@ -38,8 +38,6 @@ julia_packages=[
 "MathProgBase",
 "Memoize",
 "Optim",
-"GLPK",
-"GLPKMathProgInterface",
 "Cbc",
 "ProgressMeter",
 "PyPlot",
