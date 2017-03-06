@@ -45,6 +45,7 @@ julia_packages=[
 "LaTeXStrings",
 "Plots",
 "Polynomials",
+"Primes",
 "IJulia"
 ]
 
