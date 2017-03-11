@@ -65,18 +65,8 @@ a natural home.
 ### Dependencies
 
 My modules use functionality from several standard Julia
-packages available here: http://pkg.julialang.org/. These include:
-
-+ `MathProgBase`
-+ `JuMP`
-+ `Optim`
-+ `PyPlot`
-+ `DataStructures`
-+ `Iterators`
-+ `Polynomials`
-+ `GraphLayout`
-+ `Memoize`
-
+packages available here: http://pkg.julialang.org/. See the file `Rebuild-All-Packages.jl`
+in the `src` directory of this repository.
 
 
 ## Loading the `Simple` modules
