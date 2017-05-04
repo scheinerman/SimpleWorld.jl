@@ -23,7 +23,8 @@ my_packages = [
 "ShowSet",
 "Mods",
 "Multisets",
-"Lifts"
+"Lifts",
+"Diodes"
 ]
 
 julia_packages=[
