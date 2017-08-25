@@ -65,8 +65,20 @@ a natural home.
 ### Dependencies
 
 My modules use functionality from several standard Julia
-packages available here: http://pkg.julialang.org/. See the file `Rebuild-All-Packages.jl`
-in the `src` directory of this repository.
+packages available here: http://pkg.julialang.org/. These include:
+
++ `MathProgBase`
++ `JuMP`
++ `Optim`
++ `PyPlot`
++ `DataStructures`
++ `Iterators`
++ `Polynomials`
++ `GraphLayout`
++ `Memoize`
+
+The following diagram illustrates how my modules depend on one another.
+![Dependencies for my modules](SimpleWorldDependencies.png)
 
 
 ## Loading the `Simple` modules
@@ -86,10 +98,8 @@ julia> Pkg.clone("https://github.com/scheinerman/SimpleWorld.jl.git")
 ```
 and add the following line to `~/.juliarc.jl`:
 ```julia
-include(".julia/v0.X/SimpleWorld/src/SimpleWorld.jl")
+include(".julia/v0.4/SimpleWorld/src/SimpleWorld.jl")
 ```
-where `X` is the version.
-
 A sample `.juliarc.jl` file is included in the `src` directory of this
 repository.
 
