@@ -98,8 +98,10 @@ julia> Pkg.clone("https://github.com/scheinerman/SimpleWorld.jl.git")
 ```
 and add the following line to `~/.juliarc.jl`:
 ```julia
-include(".julia/v0.4/SimpleWorld/src/SimpleWorld.jl")
+include(".julia/v0.X/SimpleWorld/src/SimpleWorld.jl")
 ```
+where `X` depends on the version of Julia you're using.
+
 A sample `.juliarc.jl` file is included in the `src` directory of this
 repository.
 
