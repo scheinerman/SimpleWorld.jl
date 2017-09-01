@@ -23,6 +23,7 @@ my_packages = [
 "Mods",
 "Multisets",
 "Lifts",
+"SetOps",
 "Diodes"
 ]
 
