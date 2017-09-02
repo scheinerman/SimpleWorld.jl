@@ -23,12 +23,12 @@ my_packages = [
 "Mods",
 "Multisets",
 "Lifts",
+"Permutations",
 "SetOps",
 "Diodes"
 ]
 
 julia_packages=[
-"Permutations",
 "Graphs",
 "Distributions",
 "Combinatorics",
