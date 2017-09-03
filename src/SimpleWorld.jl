@@ -30,7 +30,6 @@ packages to be loaded when `SimpleFavorites()` is called.
 """
 function list_of_favorite_packages()
   packages = [
-  "SimpleTools"
   "Counters"
   "SimplePartitions"
   "SimpleGraphs"
