@@ -18,6 +18,7 @@ my_packages = [
 "RiemannComplexNumbers",
 "Bijections",
 "ClosedIntervals",
+"Counters",
 "LatexPrint",
 "ShowSet",
 "Mods",
