@@ -30,15 +30,17 @@ packages to be loaded when `SimpleFavorites()` is called.
 """
 function list_of_favorite_packages()
   packages = [
-  "Counters"
+  "SimpleTools"
   "SimplePartitions"
   "SimpleGraphs"
   "SimpleGraphRepresentations"
   "SimpleGraphDrawings"
   "SimpleGraphAlgorithms"
+  "SimpleCombinatorics"
+  "Polynomials"
   "SimpleGF2"
+  "SimplePosets"
   "ShowSet"
-  "SetOps"
   "PyPlot"
   "Primes"
   "SimpleRandom"
@@ -84,3 +86,15 @@ function box_my_text(line::String)
   println(LL * HOR^(n+2) * LR)
   nothing
 end
+
+"""
+`Big(x)` promotes `x` to be a "big" type. If `x` is an integer, `Big(x)`
+is a `BigInt`. If `x` is a floating point value, `Big(x)` is a `BigFloat`.
+Also works with complex values: Gaussian integers are promoted to
+`Complex{BigInt}` and floating point complex numbers are promoted to
+`Complex{BigFloat}`.
+"""
+
+Big(x::Real) = BigFloat(x)
+Big(x::Integer) = BigInt(x)
+Big(c::Complex) = Big(c.re) + im*Big(c.im)
