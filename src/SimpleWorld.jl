@@ -39,7 +39,6 @@ function list_of_favorite_packages()
   "SimpleCombinatorics"
   "Polynomials"
   "SimpleGF2"
-  "SimplePosets"
   "ShowSet"
   "PyPlot"
   "Primes"
