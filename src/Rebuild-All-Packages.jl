@@ -26,6 +26,7 @@ my_packages = [
 "Lifts",
 "Permutations",
 "SetOps",
+"IntPrint",
 "Diodes"
 ]
 
