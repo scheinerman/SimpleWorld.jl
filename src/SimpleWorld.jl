@@ -34,7 +34,6 @@ function list_of_favorite_packages()
   "SimplePartitions"
   "SimpleGraphs"
   "SimpleGraphRepresentations"
-  "SimpleGraphDrawings"
   "SimpleGraphAlgorithms"
   "SimpleCombinatorics"
   "Polynomials"
