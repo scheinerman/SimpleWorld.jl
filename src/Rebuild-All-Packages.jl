@@ -50,7 +50,8 @@ julia_packages=[
 "Plots",
 "Polynomials",
 "Primes",
-"IJulia"
+"IJulia",
+"Gurobi"
 ]
 
 function load_julia_pkgs()
