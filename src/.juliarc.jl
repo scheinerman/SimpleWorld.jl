@@ -3,4 +3,4 @@
 # Julia starts up.
 
 include(".julia/v0.6/SimpleWorld/src/SimpleWorld.jl")
-info("Load favorite packages with SimpleFavorites()")
+# info("Load favorite packages with SimpleFavorites()")
