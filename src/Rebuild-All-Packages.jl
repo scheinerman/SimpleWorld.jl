@@ -75,6 +75,8 @@ function load_my_pkgs()
     println(pkg)
     try
       load_mine(pkg)
+    catch
+      println("Unable to load $pkg")
     end
   end
   nothing
