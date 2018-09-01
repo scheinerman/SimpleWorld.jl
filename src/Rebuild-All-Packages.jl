@@ -10,7 +10,7 @@ my_packages = [
 "SimplePosetAlgorithms",
 "SimplePosetRepresentations",
 "SimplePosetDrawings",
-"SimpleCombinatorics",
+"BigCombinatorics",
 "SimpleGF2",
 "SimplePartitions",
 "SimpleRandom",
@@ -35,7 +35,6 @@ julia_packages=[
 "Distributions",
 "Combinatorics",
 "DataStructures",
-"GraphLayout",
 "Iterators",
 "JuMP",
 "LightXML",
@@ -66,7 +65,7 @@ end
 function load_mine(pkg_name::String)
   pre = "https://github.com/scheinerman/"
   post = ".jl.git"
-  Pkg.clone(pre*pkg_name*post)
+  Pkg.add(pre*pkg_name*post)
   nothing
 end
 
