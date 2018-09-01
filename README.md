@@ -68,7 +68,6 @@ a natural home.
 
 ### Dependencies
 
-My
 
 The following diagram illustrates how my primary modules depend on one another.
 ![Dependencies for my modules](SimpleWorldDependencies.png)
