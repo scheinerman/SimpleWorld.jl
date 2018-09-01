@@ -38,7 +38,7 @@ from the finite field GF(2); that is, the mod 2 field consisting
 of just the numbers 0 and 1. This package includes standard
 arithmetic and extensions for matrices.
 + `SimplePartitions`: Work with set partitions.
-+ `SimpleCombinatorics`: Counting functions.
++ `BigCombinatorics`: Counting functions.
 + `SimpleRandom`: Create random things.
 + `ClosedIntervals`: Defines the `ClosedInterval` data type
 that represent closed intervals of real numbers (or integers).
@@ -46,6 +46,10 @@ Includes some basic functions and operations on closed intervals.
 + `Permutations`: Defines the `Permutation` data type and
 functions/operations for dealing with permutations of
 finite sets of the form {1,2,...,n}.
++ `SimplePartitions`: Partitions of finite sets.
++ `Counters`: Count things.
++ `Multisets`: Unordered finite collections with repetition allowed.
++ `RingLists`: Lists that wrap around.
 + `ShowSet`: Loading this module overrides the usual way Julia
 displays sets. The usual way Julia displays a `Set` (or `IntSet`)
 looks like this:
@@ -64,20 +68,9 @@ a natural home.
 
 ### Dependencies
 
-My modules use functionality from several standard Julia
-packages available here: http://pkg.julialang.org/. These include:
+My
 
-+ `MathProgBase`
-+ `JuMP`
-+ `Optim`
-+ `PyPlot`
-+ `DataStructures`
-+ `Iterators`
-+ `Polynomials`
-+ `GraphLayout`
-+ `Memoize`
-
-The following diagram illustrates how my modules depend on one another.
+The following diagram illustrates how my primary modules depend on one another.
 ![Dependencies for my modules](SimpleWorldDependencies.png)
 
 
@@ -90,20 +83,7 @@ all my favorite graph theory (and related) packages.
 When Julia starts up, we just have to give the command `SimpleFavorites()`
 and we see the packages as they get loaded.
 
-## Installation
 
-Clone this package from my GitHub repository:
-```julia
-julia> Pkg.clone("https://github.com/scheinerman/SimpleWorld.jl.git")
-```
-and add the following line to `~/.juliarc.jl`:
-```julia
-include(".julia/v0.X/SimpleWorld/src/SimpleWorld.jl")
-```
-where `X` depends on the version of Julia you're using.
-
-A sample `.juliarc.jl` file is included in the `src` directory of this
-repository.
 
 ## Supporting function
 
