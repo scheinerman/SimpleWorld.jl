@@ -15,9 +15,7 @@ Here is a brief overview of my modules:
   functions for manipulating the graphs (e.g. adding/deleting
   vertices/edges), and functions to ascertain properties of these
   graphs (such as shortest paths between given vertices).
-+ `SimpleGraphDrawings`: Provides the `SimpleGraphDrawing` type that
-  wraps around a `SimpleGraph` and functions for drawing/visualizing
-  graphs.
++ `DrawSimpleGraphs`: Provides a `draw` function to visualize graphs. (Replaces `SimpleGraphDrawings`.)
 + `SimpleGraphAlgorithms`: Additional functions whose operation relies
   on integer linear programming.
 + `SimpleGraphRepresentations`: Intersection graphs and the like.
