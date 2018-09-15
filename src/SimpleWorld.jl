@@ -11,9 +11,9 @@ function SimplePackageLoader(pkg_name::String,
         verbose::Bool=false)
   command = "using $pkg_name"
   if verbose
-    info(command)
+    @info command
   end
-  eval(parse(command))
+  eval(Meta.parse(command))
   nothing
 end
 
@@ -34,8 +34,8 @@ function list_of_favorite_packages()
   "SimplePartitions"
   "SimpleGraphs"
   "DrawSimpleGraphs"
-  "SimpleGraphRepresentations"
-  "SimpleGraphAlgorithms"
+# "SimpleGraphRepresentations"
+# "SimpleGraphAlgorithms"
   "BigCombinatorics"
   "Polynomials"
   "SimpleGF2"

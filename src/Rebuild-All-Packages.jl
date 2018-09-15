@@ -1,4 +1,5 @@
 # This is for rebuilding packages
+using Pkg
 
 my_registered = [
     "BigCombinatorics",
