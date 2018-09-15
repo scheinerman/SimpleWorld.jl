@@ -1,59 +1,71 @@
 # This is for rebuilding packages
-my_packages = [
-"SimpleWorld",
-"SimpleTools",
-"SimpleGraphs",
-"SimpleGraphAlgorithms",
-"SimpleGraphDrawings",
-"SimpleGraphRepresentations",
-"SimplePosets",
-"SimplePosetAlgorithms",
-"SimplePosetRepresentations",
-"SimplePosetDrawings",
-"BigCombinatorics",
-"SimpleGF2",
-"SimplePartitions",
-"SimpleRandom",
-"SimpleTropical",
-"RiemannComplexNumbers",
-"Bijections",
-"ClosedIntervals",
-"Counters",
-"LatexPrint",
-"ShowSet",
-"Mods",
-"Multisets",
-"Lifts",
-"Permutations",
-"SetOps",
-"IntPrint",
-"Diodes"
+
+my_registered = [
+    "BigCombinatorics",
+    "ClosedIntervals",
+    "Counters",
+    "Mods",
+    "Multisets",
+    "Permutations",
+    "RiemannComplexNumbers",
+    "ShowSet",
+    "SimpleGF2",
+    "SimpleGraphs",
+    "SimplePartitions",
+    "SimpleRandom",
+    "SimpleTools",
+    "SimpleTropical"
 ]
+
+my_unregistered=[
+    "Bijections",
+    "Diodes",
+    "IntPrint",
+    "LatexPrint",
+    "Lifts",
+    "SetOps",
+    "SimpleGraphAlgorithms",
+    "SimpleGraphRepresentations",
+    "SimplePosetAlgorithms",
+    "SimplePosetDrawings",
+    "SimplePosetRepresentations",
+    "SimplePosets"
+]
+
 
 julia_packages=[
-"Graphs",
-"Distributions",
-"Combinatorics",
-"DataStructures",
-"Iterators",
-"JuMP",
-"LightXML",
-"MathProgBase",
-"Memoize",
-"Optim",
-"Cbc",
-"ProgressMeter",
-"PyPlot",
-"PyCall",
-"LaTeXStrings",
-"Plots",
-"Polynomials",
-"Primes",
-"IJulia",
-"Gurobi"
+    "Graphs",
+    "Distributions",
+    "Combinatorics",
+    "DataStructures",
+    "Iterators",
+    "IterTools",
+    "JuMP",
+    "LightXML",
+    "MathProgBase",
+    "Memoize",
+    "Optim",
+    "Cbc",
+    "Clp",
+    "ProgressMeter",
+    "Plots",
+    "GR",
+    "LaTeXStrings",
+    "Polynomials",
+    "Primes",
+    "IJulia",
+    "Gurobi"
 ]
 
-function load_julia_pkgs()
+function load_my_registered()
+  for pkg in my_registered
+    println("Adding: ", pkg)
+    Pkg.add(pkg)
+  end
+  nothing
+end
+
+function load_julia_favorites()
   for pkg in julia_packages
     println("Adding: ", pkg)
     Pkg.add(pkg)
@@ -62,15 +74,18 @@ function load_julia_pkgs()
 end
 
 
-function load_mine(pkg_name::String)
+
+
+
+function load_unreg(pkg_name::String)
   pre = "https://github.com/scheinerman/"
   post = ".jl.git"
   Pkg.add(pre*pkg_name*post)
   nothing
 end
 
-function load_my_pkgs()
-  for pkg in my_packages
+function load_my_unregistered()
+  for pkg in my_unregistered
     println(pkg)
     try
       load_mine(pkg)
@@ -82,7 +97,8 @@ function load_my_pkgs()
 end
 
 function load_all()
-  load_julia_pkgs()
-  load_my_pkgs()
+  load_julia_favorites()
+  load_my_registered()
+  load_my_unregistered()
   nothing
 end
