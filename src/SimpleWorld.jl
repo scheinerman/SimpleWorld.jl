@@ -32,7 +32,7 @@ packages to be loaded when `SimpleFavorites()` is called.
 """
 function list_of_favorite_packages()
   packages = [
-  "SimpleTools"
+  "Permutations"
   "SimplePartitions"
   "SimpleGraphs"
   "DrawSimpleGraphs"
@@ -45,6 +45,7 @@ function list_of_favorite_packages()
   "Primes"
   "SimpleRandom"
   "Multisets"
+  "Counters"
   ]
   return packages
 end
