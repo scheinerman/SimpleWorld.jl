@@ -19,6 +19,7 @@ my_registered = [
 ]
 
 my_unregistered=[
+    "DrawSimpleGraphs",   # soon to be registered 
     "Bijections",
     "Diodes",
     "IntPrint",
@@ -35,7 +36,6 @@ my_unregistered=[
 
 
 julia_packages=[
-    "Graphs",
     "Distributions",
     "Combinatorics",
     "DataStructures",
@@ -81,7 +81,7 @@ end
 function load_unreg(pkg_name::String)
   pre = "https://github.com/scheinerman/"
   post = ".jl.git"
-  full_name = pre*pkg_name*post 
+  full_name = pre*pkg_name*post
   Pkg.add(PackageSpec(url=full_name))
   nothing
 end
