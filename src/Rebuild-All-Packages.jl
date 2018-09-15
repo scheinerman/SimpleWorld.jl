@@ -81,7 +81,8 @@ end
 function load_unreg(pkg_name::String)
   pre = "https://github.com/scheinerman/"
   post = ".jl.git"
-  Pkg.add(pre*pkg_name*post)
+  full_name = pre*pkg_name*post 
+  Pkg.add(PackageSpec(url=full_name))
   nothing
 end
 
@@ -89,7 +90,7 @@ function load_my_unregistered()
   for pkg in my_unregistered
     println(pkg)
     try
-      load_mine(pkg)
+      load_unreg(pkg)
     catch
       println("Unable to load $pkg")
     end

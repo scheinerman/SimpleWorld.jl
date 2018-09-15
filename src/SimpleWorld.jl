@@ -1,3 +1,7 @@
+module SimpleWorld
+
+export box_my_text, SimpleFavorites
+
 """
 `SimplePackageLoader(pkg_name,verbose=false)`:
 This is a function form of the `using` command in Julia.
@@ -83,4 +87,6 @@ function box_my_text(line::String)
   println(VER * SPA * line * SPA * VER)
   println(LL * HOR^(n+2) * LR)
   nothing
+end
+
 end
