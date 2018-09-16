@@ -77,20 +77,20 @@ The `src` directory contains a `startup.jl` file that can be installed
 easily with the `install.sh` script (also in `src`). The shell script copies
 `starup.jl` to `~/.julia/config/startup.jl`. After launching Julia, the
 function `SimpleFavorites()` will execute a series of `using ...` commands.
-(The list of packages loaded may vary based on my person preferences.)
+(The list of packages loaded may vary based on my personal preferences.)
 ```
 $ julia
 ┌─────────────────────────────────────────────────┐
 │ Use SimpleFavorites() to load standard packages │
 └─────────────────────────────────────────────────┘
                _
-   _       _ _(_)_     |  A fresh approach to technical computing
-  (_)     | (_) (_)    |  Documentation: https://docs.julialang.org
+   _       _ _(_)_     |  Documentation: https://docs.julialang.org
+  (_)     | (_) (_)    |
    _ _   _| |_  __ _   |  Type "?" for help, "]?" for Pkg help.
   | | | | | | |/ _` |  |
-  | | |_| | | | (_| |  |  Version 0.7.0 (2018-08-08 06:46 UTC)
- _/ |\__'_|_|_|\__'_|  |  Official http://julialang.org/ release
-|__/                   |  x86_64-apple-darwin14.5.0
+  | | |_| | | | (_| |  |  Version 1.0.0 (2018-08-08)
+ _/ |\__'_|_|_|\__'_|  |  Official https://julialang.org/ release
+|__/                   |
 
 julia> SimpleFavorites()
 [ Info: using Permutations
