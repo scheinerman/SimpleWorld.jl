@@ -71,24 +71,46 @@ The following diagram illustrates how my primary modules depend on one another.
 ![Dependencies for my modules](SimpleWorldDependencies.png)
 
 
-## Loading the `Simple` modules
+## Loading my favorite  modules
 
+The `src` directory contains a `startup.jl` file that can be installed
+easily with the `install.sh` script (also in `src`). The shell script copies
+`starup.jl` to `~/.julia/config/startup.jl`. After launching Julia, the
+function `SimpleFavorites()` will execute a series of `using ...` commands.
+(The list of packages loaded may vary based on my person preferences.)
+```
+$ julia
+┌─────────────────────────────────────────────────┐
+│ Use SimpleFavorites() to load standard packages │
+└─────────────────────────────────────────────────┘
+               _
+   _       _ _(_)_     |  A fresh approach to technical computing
+  (_)     | (_) (_)    |  Documentation: https://docs.julialang.org
+   _ _   _| |_  __ _   |  Type "?" for help, "]?" for Pkg help.
+  | | | | | | |/ _` |  |
+  | | |_| | | | (_| |  |  Version 0.7.0 (2018-08-08 06:46 UTC)
+ _/ |\__'_|_|_|\__'_|  |  Official http://julialang.org/ release
+|__/                   |  x86_64-apple-darwin14.5.0
 
-This repository provides the function `SimpleFavorites` that loads
-all my favorite graph theory (and related) packages.
+julia> SimpleFavorites()
+[ Info: using Permutations
+[ Info: using SimplePartitions
+[ Info: using SimpleGraphs
+[ Info: using BigCombinatorics
+[ Info: using Polynomials
+[ Info: using SimpleGF2
+[ Info: using ShowSet
+[ Info: using Primes
+[ Info: using SimpleRandom
+[ Info: using Multisets
+[ Info: using Counters
 
-When Julia starts up, we just have to give the command `SimpleFavorites()`
-and we see the packages as they get loaded.
+julia>
+```
 
+## Erasing and starting over
 
-
-## Supporting function
-
-The `SimpleFavorites` function depends on `SimplePackageLoader`. In a sense
-this function behaves like the `using` command in Julia. Instead of
-`using PackageName` one may, instead, invoke
-`SimplePackageLoader("PackageName")`. An optional second argument
-(called `verbose`) controls if an informational message is printed.
-
-`SimplePackageLoader` may also be called with a 1-dimensional array
-(i.e., a list) of package names.
+From time to time, I have found it useful to utterly wipe out my `~/.julia`
+directory and start over. The file `src/Rebuild-All-Packages.jl` contains
+the function `load_all()` to fetch all my favorite stuff from GitHub and
+repopulate my `~/.julia`.

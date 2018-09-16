@@ -19,7 +19,7 @@ my_registered = [
 ]
 
 my_unregistered=[
-    "DrawSimpleGraphs",   # soon to be registered 
+    "DrawSimpleGraphs",   # soon to be registered
     "Bijections",
     "Diodes",
     "IntPrint",

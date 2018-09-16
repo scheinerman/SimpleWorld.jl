@@ -1,4 +1,7 @@
-
+# This is the startup.jl file that should reside in
+# ~/.julia/config/startup.jl
+# A simple way to install it is to run the ./install.sh script
+# in this directory.
 
 """
 `SimplePackageLoader(pkg_name,verbose=false)`:
@@ -35,7 +38,8 @@ function list_of_favorite_packages()
   "Permutations"
   "SimplePartitions"
   "SimpleGraphs"
-  "DrawSimpleGraphs"
+# "DrawSimpleGraphs"
+# "Plots"
 # "SimpleGraphRepresentations"
 # "SimpleGraphAlgorithms"
   "BigCombinatorics"
@@ -87,3 +91,5 @@ function box_my_text(line::String)
   println(LL * HOR^(n+2) * LR)
   nothing
 end
+
+box_my_text("Use SimpleFavorites() to load standard packages")
