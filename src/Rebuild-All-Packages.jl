@@ -36,6 +36,7 @@ my_unregistered=[
 
 
 julia_packages=[
+    "LinearAlgebra",
     "Distributions",
     "Combinatorics",
     "DataStructures",
