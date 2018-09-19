@@ -19,6 +19,7 @@ my_registered = [
 ]
 
 my_unregistered=[
+    "AbstractLattices",   # soon to be registered 
     "DrawSimpleGraphs",   # soon to be registered
     "Bijections",
     "Diodes",
