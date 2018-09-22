@@ -35,6 +35,8 @@ my_unregistered=[
     "SimplePosets"
 ]
 
+my_dev = ["SimpleWorld"]
+
 
 julia_packages=[
     "LinearAlgebra",
@@ -87,6 +89,26 @@ function load_unreg(pkg_name::String)
   full_name = pre*pkg_name*post
   Pkg.add(PackageSpec(url=full_name))
   nothing
+end
+
+function load_dev(pkg_name::String)
+  pre = "https://github.com/scheinerman/"
+  post = ".jl.git"
+  full_name = pre*pkg_name*post
+  Pkg.develop(PackageSpec(url=full_name))
+  nothing
+end
+
+function load_my_dev()
+    for pkg in my_dev
+        println(pkg)
+        try
+            load_dev(pkg)
+        catch
+            println("Unable to load $pkg")
+        end
+    end
+    nothing
 end
 
 function load_my_unregistered()
