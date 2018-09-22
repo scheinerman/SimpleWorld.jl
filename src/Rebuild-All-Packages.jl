@@ -44,7 +44,6 @@ julia_packages=[
     "Distributions",
     "Combinatorics",
     "DataStructures",
-    "Iterators",
     "IterTools",
     "JuMP",
     "LightXML",
