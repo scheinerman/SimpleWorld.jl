@@ -114,3 +114,12 @@ From time to time, I have found it useful to utterly wipe out my `~/.julia`
 directory and start over. The file `src/Rebuild-All-Packages.jl` contains
 the function `load_all()` to fetch all my favorite stuff from GitHub and
 repopulate my `~/.julia`.
+
+Alternatively, I can do this:
+```
+(v0.7) pkg> dev https://github.com/scheinerman/SimpleWorld.jl.git
+
+julia> using SimpleWorld
+
+julia> load_all()
+```

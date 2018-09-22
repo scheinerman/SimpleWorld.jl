@@ -65,7 +65,7 @@ julia_packages=[
 
 function load_my_registered()
   for pkg in my_registered
-    println("Adding: ", pkg)
+    @info "Adding: $pkg"
     Pkg.add(pkg)
   end
   nothing
@@ -73,7 +73,7 @@ end
 
 function load_julia_favorites()
   for pkg in julia_packages
-    println("Adding: ", pkg)
+    @info "Adding: $pkg"
     Pkg.add(pkg)
   end
   nothing
@@ -101,11 +101,11 @@ end
 
 function load_my_dev()
     for pkg in my_dev
-        println(pkg)
+        @info "Loading $pkg for development"
         try
             load_dev(pkg)
         catch
-            println("Unable to load $pkg")
+            @info "Unable to load $pkg"
         end
     end
     nothing
@@ -113,16 +113,20 @@ end
 
 function load_my_unregistered()
   for pkg in my_unregistered
-    println(pkg)
+    @info "Loading $pkg"
     try
       load_unreg(pkg)
     catch
-      println("Unable to load $pkg")
+      @info ("Unable to load $pkg")
     end
   end
   nothing
 end
 
+"""
+`load_all()`: This is the master command to including into
+the `.julia` directory all the functions I like to use.
+"""
 function load_all()
   load_julia_favorites()
   load_my_registered()
