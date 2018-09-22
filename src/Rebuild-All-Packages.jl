@@ -73,7 +73,11 @@ end
 function load_julia_favorites()
   for pkg in julia_packages
     @info "Adding Julia package: $pkg"
-    Pkg.add(pkg)
+    try
+        Pkg.add(pkg)
+    catch
+        @warn "Failed to add $pkg"
+    end
   end
   nothing
 end
