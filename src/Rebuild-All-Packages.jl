@@ -2,10 +2,11 @@
 using Pkg
 
 my_registered = [
+    "AbstractLattices",
     "BigCombinatorics",
     "ClosedIntervals",
     "Counters",
-    "DrawSimpleGraphs",  
+    "DrawSimpleGraphs",
     "Mods",
     "Multisets",
     "Permutations",
@@ -20,7 +21,6 @@ my_registered = [
 ]
 
 my_unregistered=[
-    "AbstractLattices",   # soon to be registered
     "Bijections",
     "Diodes",
     "IntPrint",
