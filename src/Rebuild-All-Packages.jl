@@ -7,6 +7,7 @@ my_registered = [
     "ClosedIntervals",
     "Counters",
     "DrawSimpleGraphs",
+    "HyperbolicPlane",
     "Mods",
     "Multisets",
     "Permutations",
