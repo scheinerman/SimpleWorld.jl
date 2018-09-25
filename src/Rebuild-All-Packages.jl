@@ -27,7 +27,7 @@ my_unregistered=[
     "IntPrint",
     "HyperbolicPlane",
     "LatexPrint",
-    "Lifts",
+    "LinearFractionalTransformations",
     "SetOps",
     "SimpleGraphAlgorithms",
     "SimpleGraphRepresentations",
