@@ -25,6 +25,7 @@ my_unregistered=[
     "Bijections",
     "Diodes",
     "IntPrint",
+    "HalfSine",
     "HyperbolicPlane",
     "LatexPrint",
     "LinearFractionalTransformations",
