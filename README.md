@@ -38,6 +38,7 @@ arithmetic and extensions for matrices.
 + `SimplePartitions`: Work with set partitions.
 + `BigCombinatorics`: Counting functions.
 + `SimpleRandom`: Create random things.
++ `SimpleDrawing`: Extension to `Plots` for line segments, arcs of circles, etc.
 + `ClosedIntervals`: Defines the `ClosedInterval` data type
 that represent closed intervals of real numbers (or integers).
 Includes some basic functions and operations on closed intervals.
@@ -45,18 +46,19 @@ Includes some basic functions and operations on closed intervals.
 functions/operations for dealing with permutations of
 finite sets of the form {1,2,...,n}.
 + `SimplePartitions`: Partitions of finite sets.
++ `HyperbolicPlane`: Work in the Poincaré disk model.
 + `Counters`: Count things.
 + `Multisets`: Unordered finite collections with repetition allowed.
 + `RingLists`: Lists that wrap around.
 + `ShowSet`: Loading this module overrides the usual way Julia
 displays sets. The usual way Julia displays a `Set` (or `IntSet`)
 looks like this:
-```julia
+```
 julia> A = Set([1,2,3])
 Set([2,3,1])
 ```
 After `using ShowSet` it looks like this:
-```julia
+```
 julia> A = Set([1,2,3])
 {1,2,3}
 ```
@@ -117,7 +119,7 @@ repopulate my `~/.julia`.
 
 Alternatively, I can do this:
 ```
-(v0.7) pkg> dev https://github.com/scheinerman/SimpleWorld.jl.git
+pkg> dev https://github.com/scheinerman/SimpleWorld.jl.git
 
 julia> using SimpleWorld
 

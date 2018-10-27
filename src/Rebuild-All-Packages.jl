@@ -18,6 +18,9 @@ my_registered = [
     "SimpleDrawing",
     "SimpleGF2",
     "SimpleGraphs",
+    "SimpleGraphAlgorithms",
+    "SimplePosets",
+    "SimplePosetAlgorithms",
     "SimplePartitions",
     "SimpleRandom",
     "SimpleTools",
@@ -29,15 +32,11 @@ my_unregistered=[
     "Diodes",
     "IntPrint",
     "HalfSine",
-    "HyperbolicPlane",
     "LatexPrint",
     "SetOps",
-    "SimpleGraphAlgorithms",
     "SimpleGraphRepresentations",
-    "SimplePosetAlgorithms",
     "SimplePosetDrawings",
     "SimplePosetRepresentations",
-    "SimplePosets",
     "SimpleWorld"
 ]
 
