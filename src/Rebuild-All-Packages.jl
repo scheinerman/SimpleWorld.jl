@@ -33,6 +33,7 @@ my_unregistered=[
     "Diodes",
     "IntPrint",
     "HalfSine",
+    "HyperbolicDrawSimpleGraphs",
     "LatexPrint",
     "SetOps",
     "SimpleGraphRepresentations",
