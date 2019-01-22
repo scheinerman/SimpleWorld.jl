@@ -29,6 +29,7 @@ my_registered = [
 
 my_unregistered=[
     "Bijections",
+    "DiscreteFunctions",
     "Diodes",
     "IntPrint",
     "HalfSine",
