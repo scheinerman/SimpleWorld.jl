@@ -9,6 +9,7 @@ my_registered = [
     "DrawSimpleGraphs",
     "FlexLinearAlgebra",
     "HyperbolicPlane",
+    "LatinSquares",
     "LinearFractionalTransformations",
     "Mods",
     "Multisets",
