@@ -28,6 +28,7 @@ my_registered = [
 ]
 
 my_unregistered=[
+    "BalancedIncompleteBlockDesigns",
     "Bijections",
     "DiscreteFunctions",
     "Diodes",
@@ -39,7 +40,8 @@ my_unregistered=[
     "SimpleGraphRepresentations",
     "SimplePosetDrawings",
     "SimplePosetRepresentations",
-    "SimpleWorld"
+    "SimpleWorld",
+    "Sudoku"
 ]
 
 
