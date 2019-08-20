@@ -84,8 +84,7 @@ function load_julia_favorites()
   for pkg in julia_packages
     @info "Adding Julia package: $pkg"
     try
-        # Pkg.add(pkg)
-        Pkg.develop(pkg)
+        Pkg.add(pkg)
     catch
         @warn "Failed to add $pkg"
     end
