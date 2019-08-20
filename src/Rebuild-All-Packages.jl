@@ -74,7 +74,8 @@ julia_packages=[
 function load_my_registered()
   for pkg in my_registered
     @info "Adding scheinerman registered: $pkg"
-    Pkg.add(pkg)
+    #Pkg.add(pkg)
+    Pkg.develop(pkg)
   end
   nothing
 end
@@ -83,7 +84,8 @@ function load_julia_favorites()
   for pkg in julia_packages
     @info "Adding Julia package: $pkg"
     try
-        Pkg.add(pkg)
+        # Pkg.add(pkg)
+        Pkg.develop(pkg)
     catch
         @warn "Failed to add $pkg"
     end
