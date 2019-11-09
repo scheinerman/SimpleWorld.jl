@@ -31,6 +31,7 @@ my_registered = [
 my_unregistered=[
     "BalancedIncompleteBlockDesigns",
     "Bijections",
+    "ChooseOptimizer",
     "DiscreteFunctions",
     "Diodes",
     "IntPrint",
