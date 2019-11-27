@@ -63,6 +63,8 @@ julia_packages=[
     "Optim",
     "Cbc",
     "Clp",
+    "GLPK",
+    "FFTW",
     "ProgressMeter",
     "Plots",
     "GR",
