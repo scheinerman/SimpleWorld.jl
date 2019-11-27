@@ -32,6 +32,7 @@ my_unregistered=[
     "ChooseOptimizer",
     "BalancedIncompleteBlockDesigns",
     "Bijections",
+    "ChooseOptimizer",
     "DiscreteFunctions",
     "Diodes",
     "IntPrint",
@@ -75,7 +76,9 @@ julia_packages=[
 function load_my_registered()
   for pkg in my_registered
     @info "Adding scheinerman registered: $pkg"
-    Pkg.add(pkg)
+    #Pkg.add(pkg)
+    #Pkg.develop(pkg)
+    load_unreg(pkg)
   end
   nothing
 end
