@@ -76,7 +76,8 @@ function load_my_registered()
   for pkg in my_registered
     @info "Adding scheinerman registered: $pkg"
     #Pkg.add(pkg)
-    Pkg.develop(pkg)
+    #Pkg.develop(pkg)
+    load_unreg(pkg)
   end
   nothing
 end
