@@ -127,7 +127,7 @@ the `.julia` directory all the functions I like to use.
 """
 function load_all()
   load_julia_favorites()
-  load_my_registered()
   load_my_unregistered()
+  load_my_registered()
   nothing
 end
