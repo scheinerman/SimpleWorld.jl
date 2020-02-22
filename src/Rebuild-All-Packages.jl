@@ -1,7 +1,7 @@
 # This is for rebuilding packages
 using Pkg
 
-my_registered = [
+my_packages = [
     "Permutations",
     "AbstractLattices",
     "BigCombinatorics",
@@ -25,10 +25,7 @@ my_registered = [
     "SimplePartitions",
     "SimpleRandom",
     "SimpleTools",
-    "SimpleTropical"
-]
-
-my_unregistered=[
+    "SimpleTropical",
     "ChooseOptimizer",
     "BalancedIncompleteBlockDesigns",
     "Bijections",
@@ -75,9 +72,9 @@ julia_packages=[
     "Gurobi"
 ]
 
-function load_my_registered()
-  for pkg in my_registered
-    @info "Adding scheinerman registered: $pkg"
+function load_my_pkgs()
+  for pkg in my_packages
+    @info "Adding: $pkg"
     #Pkg.add(pkg)
     #Pkg.develop(pkg)
     load_unreg(pkg)
@@ -127,7 +124,6 @@ the `.julia` directory all the functions I like to use.
 """
 function load_all()
   load_julia_favorites()
-  load_my_unregistered()
-  load_my_registered()
+  load_my_pkgs()
   nothing
 end
