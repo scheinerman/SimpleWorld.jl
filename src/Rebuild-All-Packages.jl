@@ -2,6 +2,7 @@
 using Pkg
 
 my_registered = [
+    "Permutations",
     "AbstractLattices",
     "BigCombinatorics",
     "ClosedIntervals",
@@ -13,7 +14,6 @@ my_registered = [
     "LinearFractionalTransformations",
     "Mods",
     "Multisets",
-    "Permutations",
     "RiemannComplexNumbers",
     "ShowSet",
     "SimpleDrawing",
