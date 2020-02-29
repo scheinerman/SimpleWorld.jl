@@ -40,7 +40,8 @@ my_packages = [
     "SimplePosetDrawings",
     "SimplePosetRepresentations",
     "SimpleWorld",
-    "Sudoku"
+    "Sudoku",
+    "Mazes"
 ]
 
 
