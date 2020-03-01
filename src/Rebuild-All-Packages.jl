@@ -65,6 +65,7 @@ julia_packages=[
     "ProgressMeter",
     "Plots",
     "GR",
+    "PyPlot",
     "LaTeXStrings",
     "Polynomials",
     "Primes",
