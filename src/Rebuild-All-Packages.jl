@@ -21,6 +21,7 @@ my_packages = [
     "SimpleGF2",
     "SimpleGraphs",
     "SimpleGraphAlgorithms",
+    "SimpleLife",
     "SimplePosets",
     "SimplePosetAlgorithms",
     "SimplePartitions",
