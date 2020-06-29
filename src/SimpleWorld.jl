@@ -1,7 +1,7 @@
 
 module SimpleWorld
 
-export load_my_registered, load_julia_favorites, load_unreg, load_all
+export status_report, load_all
 
 include("Rebuild-All-Packages.jl")
 
