@@ -22,16 +22,16 @@ my_registered = [
     "LatexPrint",
     "SimpleLife",
     "TwentyFour",
+    "ClosedIntervals",
+    "Multisets",
 ]
 
 my_unregistered = [
-    "ClosedIntervals",
     "Counters",
     "DrawSimpleGraphs",
     "FlexLinearAlgebra",
     "ChooseOptimizer",
     "LatinSquares",
-    "Multisets",
     "SimpleGraphs",
     "SimpleGraphAlgorithms",
     "SimplePosets",
