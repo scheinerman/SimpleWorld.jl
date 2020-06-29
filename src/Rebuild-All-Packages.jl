@@ -1,33 +1,40 @@
 # This is for rebuilding packages
 using Pkg
 
-my_packages = [
+my_registered = [
     "Permutations",
     "AbstractLattices",
     "BigCombinatorics",
-    "ClosedIntervals",
-    "Counters",
-    "DrawSimpleGraphs",
-    "FlexLinearAlgebra",
     "HyperbolicPlane",
-    "ChooseOptimizer",
-    "LatinSquares",
     "LinearFractionalTransformations",
     "Mods",
-    "Multisets",
-    "RiemannComplexNumbers",
-    "ShowSet",
-    "SimpleDrawing",
-    "SimpleGF2",
-    "SimpleGraphs",
-    "SimpleGraphAlgorithms",
-    "SimpleLife",
-    "SimplePosets",
-    "SimplePosetAlgorithms",
+    "SimplePartitions",
+    "SimpleRandom",
+    "SimpleTools",
     "SimplePartitions",
     "SimpleRandom",
     "SimpleTools",
     "SimpleTropical",
+    "RiemannComplexNumbers",
+    "ShowSet",
+    "SimpleDrawing",
+    "SimpleGF2",
+    "LatexPrint",
+    "SimpleLife",
+]
+
+my_unregistered = [
+    "ClosedIntervals",
+    "Counters",
+    "DrawSimpleGraphs",
+    "FlexLinearAlgebra",
+    "ChooseOptimizer",
+    "LatinSquares",
+    "Multisets",
+    "SimpleGraphs",
+    "SimpleGraphAlgorithms",
+    "SimplePosets",
+    "SimplePosetAlgorithms",
     "BalancedIncompleteBlockDesigns",
     "Bijections",
     "DiscreteFunctions",
@@ -35,7 +42,6 @@ my_packages = [
     "IntPrint",
     "HalfSine",
     "HyperbolicDrawSimpleGraphs",
-    "LatexPrint",
     "SetOps",
     "SimpleGraphRepresentations",
     "SimplePosetDrawings",
@@ -74,15 +80,19 @@ julia_packages=[
     "Gurobi"
 ]
 
-function load_my_pkgs()
-  for pkg in my_packages
-    @info "Adding: $pkg"
-    #Pkg.add(pkg)
-    #Pkg.develop(pkg)
-    load_unreg(pkg)
-  end
-  nothing
-end
+
+
+
+#
+# function load_my_pkgs()
+#   for pkg in my_packages
+#     @info "Adding: $pkg"
+#     #Pkg.add(pkg)
+#     #Pkg.develop(pkg)
+#     load_unreg(pkg)
+#   end
+#   nothing
+# end
 
 function load_julia_favorites()
   for pkg in julia_packages
@@ -98,34 +108,63 @@ end
 
 
 
+function my_dev(pkg_name::String)
+    pre = "https://github.com/scheinerman/"
+    post = ".jl.git"
+    full_name = pre*pkg_name*post
+    try
+        Pkg.develop(PackageSpec(url=full_name))
+        @info "Added $pkg_name in development mode"
+    catch
+        @warn "Unable to add $pkg_name in development mode"
+    end
+    nothing
+end
 
-
-function load_unreg(pkg_name::String)
-  pre = "https://github.com/scheinerman/"
-  post = ".jl.git"
-  full_name = pre*pkg_name*post
-  Pkg.develop(PackageSpec(url=full_name))
-  nothing
+function my_add(pkg::String)
+    try
+        Pkg.add(pkg)
+        @info "Added $pkg"
+    catch
+        @warn "Unable to add $pkg"
+    end
+    nothing
 end
 
 function load_my_unregistered()
-  for pkg in my_unregistered
-    @info "Loading $pkg into development"
-    try
-      load_unreg(pkg)
-    catch
-      @warn "FAILED to load $pkg"
-    end
+  for pkg in sort(my_unregistered)
+      my_dev(pkg)
   end
   nothing
 end
 
+function load_my_registered()
+    for pkg in sort(my_registered)
+        my_add(pkg)
+    end
+    nothing
+end
+
+function status_report()
+    println("Status of my registered packages")
+    for pkg in sort(my_registered)
+        Pkg.status(pkg)
+    end
+    println("=================================")
+    println("Status of my development packages")
+    for pkg in sort(my_unregistered)
+        Pkg.status(pkg)
+    end
+    nothing
+end
+
 """
 `load_all()`: This is the master command to including into
-the `.julia` directory all the functions I like to use.
+the `.julia` directory all the packages I like to use.
 """
 function load_all()
   load_julia_favorites()
-  load_my_pkgs()
+  load_my_registered()
+  load_my_unregistered()
   nothing
 end
