@@ -21,6 +21,7 @@ my_registered = [
     "SimpleGF2",
     "LatexPrint",
     "SimpleLife",
+    "TwentyFour"
 ]
 
 my_unregistered = [
