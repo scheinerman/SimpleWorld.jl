@@ -21,7 +21,7 @@ my_registered = [
     "SimpleGF2",
     "LatexPrint",
     "SimpleLife",
-    "TwentyFour"
+    "TwentyFour",
 ]
 
 my_unregistered = [
@@ -49,12 +49,12 @@ my_unregistered = [
     "SimplePosetRepresentations",
     "SimpleWorld",
     "Sudoku",
-    "Mazes"
+    "Mazes",
 ]
 
 
 
-julia_packages=[
+julia_packages = [
     "LinearAlgebra",
     "Random",
     "Distributions",
@@ -78,33 +78,23 @@ julia_packages=[
     "Polynomials",
     "Primes",
     "IJulia",
-    "Gurobi"
+    "Gurobi",
+    "JuliaFormatter",
 ]
 
 
 
 
-#
-# function load_my_pkgs()
-#   for pkg in my_packages
-#     @info "Adding: $pkg"
-#     #Pkg.add(pkg)
-#     #Pkg.develop(pkg)
-#     load_unreg(pkg)
-#   end
-#   nothing
-# end
-
 function load_julia_favorites()
-  for pkg in julia_packages
-    @info "Adding Julia package: $pkg"
-    try
-        Pkg.add(pkg)
-    catch
-        @warn "Failed to add $pkg"
+    for pkg in julia_packages
+        @info "Adding Julia package: $pkg"
+        try
+            Pkg.add(pkg)
+        catch
+            @warn "Failed to add $pkg"
+        end
     end
-  end
-  nothing
+    nothing
 end
 
 
@@ -112,9 +102,9 @@ end
 function my_dev(pkg_name::String)
     pre = "https://github.com/scheinerman/"
     post = ".jl.git"
-    full_name = pre*pkg_name*post
+    full_name = pre * pkg_name * post
     try
-        Pkg.develop(PackageSpec(url=full_name))
+        Pkg.develop(PackageSpec(url = full_name))
         @info "Added $pkg_name in development mode"
     catch
         @warn "Unable to add $pkg_name in development mode"
@@ -133,10 +123,10 @@ function my_add(pkg::String)
 end
 
 function load_my_unregistered()
-  for pkg in sort(my_unregistered)
-      my_dev(pkg)
-  end
-  nothing
+    for pkg in sort(my_unregistered)
+        my_dev(pkg)
+    end
+    nothing
 end
 
 function load_my_registered()
@@ -146,6 +136,10 @@ function load_my_registered()
     nothing
 end
 
+"""
+`status_report()` is a version of `Pkg.status()`
+organized for my stuff.
+"""
 function status_report()
     println("Status of my registered packages")
     for pkg in sort(my_registered)
@@ -164,8 +158,8 @@ end
 the `.julia` directory all the packages I like to use.
 """
 function load_all()
-  load_julia_favorites()
-  load_my_registered()
-  load_my_unregistered()
-  nothing
+    load_julia_favorites()
+    load_my_registered()
+    load_my_unregistered()
+    nothing
 end

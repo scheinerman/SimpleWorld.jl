@@ -4,4 +4,4 @@
 
 using Pkg
 LOC = "https://github.com/scheinerman/SimpleWorld.jl.git"
-Pkg.develop(PackageSpec(url=LOC))
+Pkg.develop(PackageSpec(url = LOC))

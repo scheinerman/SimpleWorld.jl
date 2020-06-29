@@ -12,21 +12,20 @@ Instead of `using SomePackage` we can instead call
 
 This can also be called with a list of package names.
 """
-function SimplePackageLoader(pkg_name::String,
-        verbose::Bool=false)
-  command = "using $pkg_name"
-  if verbose
-    @info command
-  end
-  eval(Meta.parse(command))
-  nothing
+function SimplePackageLoader(pkg_name::String, verbose::Bool = false)
+    command = "using $pkg_name"
+    if verbose
+        @info command
+    end
+    eval(Meta.parse(command))
+    nothing
 end
 
-function SimplePackageLoader(pkgs,verbose::Bool=false)
-  for p in pkgs
-    SimplePackageLoader(p,verbose)
-  end
-  nothing
+function SimplePackageLoader(pkgs, verbose::Bool = false)
+    for p in pkgs
+        SimplePackageLoader(p, verbose)
+    end
+    nothing
 end
 
 """
@@ -34,25 +33,19 @@ end
 packages to be loaded when `SimpleFavorites()` is called.
 """
 function list_of_favorite_packages()
-  packages = [
-  "Permutations"
-  "SimplePartitions"
-  "SimpleGraphs"
-# "DrawSimpleGraphs"
-# "Plots"
-# "SimpleGraphRepresentations"
-# "SimpleGraphAlgorithms"
-  "BigCombinatorics"
-  "Polynomials"
-  "SimpleTools"
-  "LinearAlgebra"
-  "ShowSet"
-  "Primes"
-  "SimpleRandom"
-  "Multisets"
-  "Counters"
-  ]
-  return packages
+    packages = [
+        "Permutations"
+        "SimplePartitions"
+        "SimpleGraphs"
+        "BigCombinatorics"
+        "Polynomials"
+        "SimpleTools"
+        "LinearAlgebra"
+        "ShowSet"
+        "Primes"
+        "SimpleRandom"
+    ]
+    return packages
 end
 
 """
@@ -60,8 +53,8 @@ end
 `Simple` packages. The list can be obtained using
 `list_of_favorite_packages()`.
 """
-function SimpleFavorites(verbose::Bool=true)
-  SimplePackageLoader(list_of_favorite_packages(),verbose)
+function SimpleFavorites(verbose::Bool = true)
+    SimplePackageLoader(list_of_favorite_packages(), verbose)
 end
 
 
@@ -78,19 +71,19 @@ julia> box_my_text("Hello")
 ```
 """
 function box_my_text(line::String)
-  UL = "$(Char(9484))"
-  UR = "$(Char(9488))"
-  LL = "$(Char(9492))"
-  LR = "$(Char(9496))"
-  HOR = "$(Char(9472))"
-  VER = "$(Char(9474))"
-  SPA = " "
+    UL = "$(Char(9484))"
+    UR = "$(Char(9488))"
+    LL = "$(Char(9492))"
+    LR = "$(Char(9496))"
+    HOR = "$(Char(9472))"
+    VER = "$(Char(9474))"
+    SPA = " "
 
-  n = length(line)
-  println(UL * HOR^(n+2) * UR)
-  println(VER * SPA * line * SPA * VER)
-  println(LL * HOR^(n+2) * LR)
-  nothing
+    n = length(line)
+    println(UL * HOR^(n + 2) * UR)
+    println(VER * SPA * line * SPA * VER)
+    println(LL * HOR^(n + 2) * LR)
+    nothing
 end
 
-box_my_text("Use SimpleFavorites() to load standard packages")
+# box_my_text("Use SimpleFavorites() to load standard packages")
