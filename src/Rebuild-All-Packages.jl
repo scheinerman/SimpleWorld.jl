@@ -26,6 +26,8 @@ my_registered = [
     "DrawSimpleGraphs"
     "ChooseOptimizer"
     "SimpleGraphs"
+    "FlexLinearAlgebra"
+    "SimplePosets"
 ]
 
 my_unregistered = [
@@ -33,7 +35,6 @@ my_unregistered = [
     "Bijections"
     "Diodes"
     "DiscreteFunctions"
-    "FlexLinearAlgebra"
     "HalfSine"
     "HyperbolicDrawSimpleGraphs"
     "IntPrint"
@@ -44,7 +45,6 @@ my_unregistered = [
     "SimplePosetAlgorithms"
     "SimplePosetDrawings"
     "SimplePosetRepresentations"
-    "SimplePosets"
     "SimpleWorld"
     "Sudoku"
 ]
