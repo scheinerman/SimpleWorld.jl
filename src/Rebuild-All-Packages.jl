@@ -24,12 +24,13 @@ my_registered = [
     "TwentyFour"
     "Mazes"
     "DrawSimpleGraphs"
+    "ChooseOptimizer"
+    "SimpleGraphs"
 ]
 
 my_unregistered = [
     "BalancedIncompleteBlockDesigns"
     "Bijections"
-    "ChooseOptimizer"
     "Diodes"
     "DiscreteFunctions"
     "FlexLinearAlgebra"
@@ -40,7 +41,6 @@ my_unregistered = [
     "SetOps"
     "SimpleGraphAlgorithms"
     "SimpleGraphRepresentations"
-    "SimpleGraphs"
     "SimplePosetAlgorithms"
     "SimplePosetDrawings"
     "SimplePosetRepresentations"
