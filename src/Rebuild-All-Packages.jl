@@ -22,6 +22,8 @@ my_registered = [
     "SimpleTools"
     "SimpleTropical"
     "TwentyFour"
+    "Mazes"
+    "DrawSimpleGraphs"
 ]
 
 my_unregistered = [
@@ -30,13 +32,11 @@ my_unregistered = [
     "ChooseOptimizer"
     "Diodes"
     "DiscreteFunctions"
-    "DrawSimpleGraphs"
     "FlexLinearAlgebra"
     "HalfSine"
     "HyperbolicDrawSimpleGraphs"
     "IntPrint"
     "LatinSquares"
-    "Mazes"
     "SetOps"
     "SimpleGraphAlgorithms"
     "SimpleGraphRepresentations"
