@@ -5,4 +5,4 @@ uuid = "5ae6dfce-4d76-5962-b232-176192dc7175"
 Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
 
 [compat]
-julia = "≥ 0.7.0"
+julia = "1"

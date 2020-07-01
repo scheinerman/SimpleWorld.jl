@@ -29,6 +29,7 @@ my_registered = [
     "FlexLinearAlgebra"
     "SimplePosets"
     "Sudoku"
+    "IntPrint"
 ]
 
 my_unregistered = [
@@ -38,7 +39,6 @@ my_unregistered = [
     "DiscreteFunctions"
     "HalfSine"
     "HyperbolicDrawSimpleGraphs"
-    "IntPrint"
     "LatinSquares"
     "SetOps"
     "SimpleGraphAlgorithms"
@@ -48,7 +48,6 @@ my_unregistered = [
     "SimplePosetRepresentations"
     "SimpleWorld"
 ]
-
 
 
 julia_packages = [
@@ -142,7 +141,7 @@ function status_report()
     for pkg in sort(my_registered)
         Pkg.status(pkg)
     end
-    println("=================================")
+    println("================================="^2)
     println("Status of my development packages")
     for pkg in sort(my_unregistered)
         Pkg.status(pkg)
