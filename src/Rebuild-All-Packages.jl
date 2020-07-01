@@ -29,7 +29,6 @@ my_registered = [
     "FlexLinearAlgebra"
     "SimplePosets"
     "Sudoku"
-    "IntPrint"
 ]
 
 my_unregistered = [
@@ -47,6 +46,7 @@ my_unregistered = [
     "SimplePosetDrawings"
     "SimplePosetRepresentations"
     "SimpleWorld"
+    "IntPrint"
 ]
 
 
