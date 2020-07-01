@@ -28,6 +28,7 @@ my_registered = [
     "SimpleGraphs"
     "FlexLinearAlgebra"
     "SimplePosets"
+    "Sudoku"
 ]
 
 my_unregistered = [
@@ -46,7 +47,6 @@ my_unregistered = [
     "SimplePosetDrawings"
     "SimplePosetRepresentations"
     "SimpleWorld"
-    "Sudoku"
 ]
 
 
