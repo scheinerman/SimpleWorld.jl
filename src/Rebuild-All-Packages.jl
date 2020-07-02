@@ -4,6 +4,7 @@ using Pkg
 my_registered = [
     "AbstractLattices"
     "BigCombinatorics"
+    "Bijections"
     "ClosedIntervals"
     "Counters"
     "HyperbolicPlane"
@@ -33,7 +34,6 @@ my_registered = [
 
 my_unregistered = [
     "BalancedIncompleteBlockDesigns"
-    "Bijections"
     "Diodes"
     "DiscreteFunctions"
     "HalfSine"
