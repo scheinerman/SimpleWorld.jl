@@ -30,19 +30,19 @@ my_registered = [
     "FlexLinearAlgebra"
     "SimplePosets"
     "Sudoku"
+    "DiscreteFunctions"
+    "LatinSquares"
+    "SimpleGraphAlgorithms"
+    "SimplePosetAlgorithms"
 ]
 
 my_unregistered = [
     "BalancedIncompleteBlockDesigns"
     "Diodes"
-    "DiscreteFunctions"
     "HalfSine"
     "HyperbolicDrawSimpleGraphs"
-    "LatinSquares"
     "SetOps"
-    "SimpleGraphAlgorithms"
     "SimpleGraphRepresentations"
-    "SimplePosetAlgorithms"
     "SimplePosetDrawings"
     "SimplePosetRepresentations"
     "SimpleWorld"
