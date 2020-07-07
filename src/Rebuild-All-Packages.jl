@@ -47,6 +47,7 @@ my_unregistered = [
     "SimplePosetRepresentations"
     "SimpleWorld"
     "IntPrint"
+    "LinearAlgebraX"
 ]
 
 
