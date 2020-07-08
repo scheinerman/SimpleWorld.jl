@@ -34,6 +34,7 @@ my_registered = [
     "LatinSquares"
     "SimpleGraphAlgorithms"
     "SimplePosetAlgorithms"
+    "SimplePolynomials"
 ]
 
 my_unregistered = [
@@ -48,7 +49,6 @@ my_unregistered = [
     "SimpleWorld"
     "IntPrint"
     "LinearAlgebraX"
-    "SimplePolynomials"
 ]
 
 
