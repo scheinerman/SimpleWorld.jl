@@ -48,6 +48,7 @@ my_unregistered = [
     "SimpleWorld"
     "IntPrint"
     "LinearAlgebraX"
+    "SimplePolynomials"
 ]
 
 
