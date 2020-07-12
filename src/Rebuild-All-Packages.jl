@@ -35,6 +35,7 @@ my_registered = [
     "SimpleGraphAlgorithms"
     "SimplePosetAlgorithms"
     "SimplePolynomials"
+    "SimpleRationalFunctions"
 ]
 
 my_unregistered = [
