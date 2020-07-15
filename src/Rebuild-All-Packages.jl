@@ -36,6 +36,7 @@ my_registered = [
     "SimplePosetAlgorithms"
     "SimplePolynomials"
     "SimpleRationalFunctions"
+    "LinearAlgebraX"
 ]
 
 my_unregistered = [
@@ -49,7 +50,6 @@ my_unregistered = [
     "SimplePosetRepresentations"
     "SimpleWorld"
     "IntPrint"
-    "LinearAlgebraX"
 ]
 
 
@@ -112,11 +112,12 @@ function my_dev(pkg_name::String)
 end
 
 function my_add(pkg::String)
+    my_dev(pkg)
     try
-        Pkg.add(pkg)
-        @info "Added $pkg"
+        Pkg.free(pkg)
+        @info "$pkg freed"
     catch
-        @warn "Unable to add $pkg"
+        @warn "Unable to add/free $pkg"
     end
     nothing
 end
