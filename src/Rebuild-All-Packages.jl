@@ -50,6 +50,7 @@ my_unregistered = [
     "SimplePosetRepresentations"
     "SimpleWorld"
     "IntPrint"
+    "PlayingCards"
 ]
 
 
