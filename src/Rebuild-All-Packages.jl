@@ -36,6 +36,7 @@ my_registered = [
     "SimplePosetAlgorithms"
     "SimplePolynomials"
     "LinearAlgebraX"
+    "SimpleQuaternions"
 ]
 
 my_unregistered = [
@@ -50,7 +51,6 @@ my_unregistered = [
     "SimpleWorld"
     "IntPrint"
     "PlayingCards"
-    "SimpleQuaternions"
 ]
 
 
