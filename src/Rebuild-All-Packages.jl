@@ -80,6 +80,7 @@ julia_packages = [
     "ProgressMeter"
     "PyPlot"
     "Random"
+    "Nemo"
 ]
 
 
