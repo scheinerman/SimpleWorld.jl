@@ -51,6 +51,7 @@ my_unregistered = [
     "SimpleWorld"
     "IntPrint"
     "PlayingCards"
+    "Factorions"
 ]
 
 
