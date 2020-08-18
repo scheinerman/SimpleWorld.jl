@@ -38,7 +38,6 @@ function list_of_favorite_packages()
         "SimplePartitions"
         "SimpleGraphs"
         "BigCombinatorics"
-        "Polynomials"
         "SimpleTools"
         "LinearAlgebra"
         "ShowSet"
