@@ -82,6 +82,8 @@ julia_packages = [
     "PyPlot"
     "Random"
     "Nemo"
+    "PkgTemplates"
+    "Documenter"
 ]
 
 
