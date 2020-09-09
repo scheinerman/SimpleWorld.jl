@@ -37,6 +37,7 @@ my_registered = [
     "SimplePolynomials"
     "LinearAlgebraX"
     "SimpleQuaternions"
+    "RingLists"
 ]
 
 my_unregistered = [
@@ -52,6 +53,7 @@ my_unregistered = [
     "IntPrint"
     "PlayingCards"
     "Factorions"
+    "SimplePlanarGraphs"
 ]
 
 
