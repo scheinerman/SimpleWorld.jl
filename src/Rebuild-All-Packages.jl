@@ -37,6 +37,7 @@ my_registered = [
     "SimplePolynomials"
     "LinearAlgebraX"
     "SimpleQuaternions"
+    "RingLists"
 ]
 
 my_unregistered = [
