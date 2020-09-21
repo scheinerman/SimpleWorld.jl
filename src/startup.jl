@@ -61,6 +61,7 @@ function list_of_graph_theory()
         "Plots"
         "ChooseOptimizer"
         "Gurobi"
+        "ShowSet"
     ]
     return packages
 end
@@ -109,3 +110,4 @@ function box_my_text(line::String)
 end
 
 # box_my_text("Use SimpleFavorites() to load standard packages")
+box_my_text("New! Use GraphTheory() to load graph theory packages")
