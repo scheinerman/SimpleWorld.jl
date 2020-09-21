@@ -29,10 +29,10 @@ function SimplePackageLoader(pkgs, verbose::Bool = false)
 end
 
 """
-`list_of_favorite_packages()` returns a list of the
+`list_of_favorites()` returns a list of the
 packages to be loaded when `SimpleFavorites()` is called.
 """
-function list_of_favorite_packages()
+function list_of_favorites()
     packages = [
         "Permutations"
         "SimplePartitions"
@@ -48,16 +48,39 @@ function list_of_favorite_packages()
 end
 
 """
+`list_of_graph_theory()` are the packages to use when focused on 
+graph computing.
+"""
+function list_of_graph_theory()
+    packages = [
+        "SimpleGraphs"
+        "SimplePlanarGraphs"
+        "SimpleGraphAlgorithms"
+        "SimplePlanarGraphs"
+        "DrawSimpleGraphs"
+        "Plots"
+        "ChooseOptimizer"
+        "Gurobi"
+    ]
+    return packages
+end
+
+"""
 `SimpleFavorites(verbose::Bool=true)` will load my favorite
 `Simple` packages. The list can be obtained using
 `list_of_favorite_packages()`.
 """
-function SimpleFavorites(verbose::Bool = true)
-    SimplePackageLoader(list_of_favorite_packages(), verbose)
+SimpleFavorites(verbose::Bool = true) =
+    SimplePackageLoader(list_of_favorites(), verbose)
+
+"""
+`GraphTheory(verbose::Bool=true)` load my packages for working on graphs
+and sets the optmizer to be `Gurobi` (non-verbose).
+"""
+function GraphTheory(verbose::Bool = true)
+    SimplePackageLoader(list_of_graph_theory(), verbose)
+    eval(Meta.parse("use_Gurobi()"))
 end
-
-
-
 """
 `box_my_text(line)` prints out a single line of text embedded in a
 box consisting of corner and connector characters.

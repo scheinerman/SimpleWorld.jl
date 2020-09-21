@@ -3,4 +3,4 @@ if ! test -e ~/.julia/config
 then
   mkdir ~/.julia/config
 fi
-cp startup.jl ~/.julia/config/startup.jl
+cp ~/.julia/dev/SimpleWorld/src/startup.jl ~/.julia/config/startup.jl
