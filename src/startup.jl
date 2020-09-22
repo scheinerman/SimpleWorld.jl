@@ -56,12 +56,13 @@ function list_of_graph_theory()
         "SimpleGraphs"
         "SimplePlanarGraphs"
         "SimpleGraphAlgorithms"
-        "SimplePlanarGraphs"
         "DrawSimpleGraphs"
         "Plots"
         "ChooseOptimizer"
         "Gurobi"
         "ShowSet"
+        "SimplePlanarGraphs"
+        "RingLists"
     ]
     return packages
 end
