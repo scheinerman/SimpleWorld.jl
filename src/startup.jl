@@ -76,7 +76,7 @@ SimpleFavorites(verbose::Bool = true) =
     SimplePackageLoader(list_of_favorites(), verbose)
 
 """
-`GraphTheory(verbose::Bool=true)` load my packages for working on graphs
+`GraphTheory(verbose::Bool=true)` loads my packages for working on graphs
 and sets the optmizer to be `Gurobi` (non-verbose).
 """
 function GraphTheory(verbose::Bool = true)
