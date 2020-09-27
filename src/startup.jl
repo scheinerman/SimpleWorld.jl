@@ -56,8 +56,6 @@ function list_of_graph_theory()
         "SimpleGraphs"
         "SimplePlanarGraphs"
         "SimpleGraphAlgorithms"
-        "DrawSimpleGraphs"
-        "Plots"
         "ChooseOptimizer"
         "Gurobi"
         "ShowSet"
@@ -82,11 +80,11 @@ and sets the optmizer to be `Gurobi` (non-verbose).
 function GraphTheory(verbose::Bool = true)
     SimplePackageLoader(list_of_graph_theory(), verbose)
     eval(Meta.parse("use_Gurobi()"))
+    @info "DrawSimpleGraphs and Plots are not loaded"
 end
 """
 `box_my_text(line)` prints out a single line of text embedded in a
 box consisting of corner and connector characters.
-
 ```
 julia> box_my_text("Hello")
 ┌───────┐
