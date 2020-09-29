@@ -93,7 +93,7 @@ If `draw_pkgs` is set to true, also load the packages returned by  `list_of_grap
 """
 function GraphTheory(draw_pkgs::Bool=false, verbose::Bool = true)
     SimplePackageLoader(list_of_graph_theory(), verbose)
-    eval(Meta.parse("use_Gurobi($verbose)"))
+    eval(Meta.parse("use_Gurobi()"))
 
     if draw_pkgs
         SimplePackageLoader(list_of_graph_draw(), verbose)
