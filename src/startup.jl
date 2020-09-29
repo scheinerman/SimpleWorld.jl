@@ -93,12 +93,14 @@ If `draw_pkgs` is set to true, also load the packages returned by  `list_of_grap
 """
 function GraphTheory(draw_pkgs::Bool=false, verbose::Bool = true)
     SimplePackageLoader(list_of_graph_theory(), verbose)
-    eval(Meta.parse("use_Gurobi()"))
+    eval(Meta.parse("use_Gurobi($verbose)"))
 
     if draw_pkgs
         SimplePackageLoader(list_of_graph_draw(), verbose)
     else 
-        @info "Graph drawing packages not loaded"
+        if verbose
+            @info "Graph drawing packages not loaded"
+        end 
     end 
 end
 """
