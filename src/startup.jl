@@ -62,6 +62,7 @@ function list_of_graph_theory()
         "ShowSet"
         "SimplePlanarGraphs"
         "RingLists"
+        "SimplePolynomials"
     ]
     return packages
 end
