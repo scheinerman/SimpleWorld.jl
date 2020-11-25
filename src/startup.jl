@@ -43,6 +43,7 @@ function list_of_favorites()
         "ShowSet"
         "Primes"
         "SimpleRandom"
+        "SimplePolynomials"
     ]
     return packages
 end
