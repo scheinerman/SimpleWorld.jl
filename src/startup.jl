@@ -132,4 +132,4 @@ function box_my_text(line::String)
 end
 
 # box_my_text("Use SimpleFavorites() to load standard packages")
-box_my_text("Use GraphTheory() to load graph theory packages")
+# box_my_text("Use GraphTheory() to load graph theory packages")
