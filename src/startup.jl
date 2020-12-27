@@ -73,9 +73,9 @@ for graph visualization.
 """
 function list_of_graph_draw()
     packages = [
-        "DrawSimpleGraphs"
         "Plots"
         "SimpleDrawing"
+        "DrawSimpleGraphs"
     ]
 end
 """
