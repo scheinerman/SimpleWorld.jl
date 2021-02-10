@@ -38,6 +38,7 @@ my_registered = [
     "LinearAlgebraX"
     "SimpleQuaternions"
     "RingLists"
+    "ImplicitGraphs"
 ]
 
 my_unregistered = [
