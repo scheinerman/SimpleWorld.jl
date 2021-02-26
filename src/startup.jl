@@ -55,7 +55,6 @@ graph computing.
 function list_of_graph_theory()
     packages = [
         "SimpleGraphs"
-        "SimplePlanarGraphs"
         "SimpleGraphAlgorithms"
         "ChooseOptimizer"
         "Gurobi"
