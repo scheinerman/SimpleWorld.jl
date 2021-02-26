@@ -60,7 +60,6 @@ function list_of_graph_theory()
         "ChooseOptimizer"
         "Gurobi"
         "ShowSet"
-        "SimplePlanarGraphs"
         "RingLists"
         "SimplePolynomials"
     ]
