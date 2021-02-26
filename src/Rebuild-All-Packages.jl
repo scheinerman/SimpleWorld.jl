@@ -54,7 +54,6 @@ my_unregistered = [
     "IntPrint"
     "PlayingCards"
     "Factorions"
-    "SimplePlanarGraphs"
 ]
 
 
