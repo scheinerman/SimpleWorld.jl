@@ -39,6 +39,7 @@ my_registered = [
     "SimpleQuaternions"
     "RingLists"
     "ImplicitGraphs"
+    "SimplePlanarGraphs"
 ]
 
 my_unregistered = [
