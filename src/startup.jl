@@ -59,7 +59,6 @@ function list_of_graph_theory()
         "ChooseOptimizer"
         "Gurobi"
         "ShowSet"
-        "RingLists"
         "SimplePolynomials"
     ]
     return packages
