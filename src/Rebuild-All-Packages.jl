@@ -87,6 +87,7 @@ julia_packages = [
     "Nemo"
     "PkgTemplates"
     "Documenter"
+    "BenchmarkTools"
 ]
 
 
