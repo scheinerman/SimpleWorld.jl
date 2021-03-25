@@ -38,16 +38,15 @@ my_registered = [
     "LinearAlgebraX"
     "SimpleQuaternions"
     "RingLists"
-    "ImplicitGraphs"
-    "SimplePlanarGraphs"
 ]
 
 my_unregistered = [
+    "SimplePlanarGraphs"
+    "ImplicitGraphs"
     "BalancedIncompleteBlockDesigns"
     "Diodes"
     "HalfSine"
     "HyperbolicDrawSimpleGraphs"
-    "SetOps"
     "SimpleGraphRepresentations"
     "SimplePosetDrawings"
     "SimplePosetRepresentations"
