@@ -52,7 +52,8 @@ my_unregistered = [
     "SimplePosetRepresentations"
     "SimpleWorld"
     "IntPrint"
-    "PlayingCards"
+    "PlayingCards52"
+    "FreeCell"
     "Factorions"
 ]
 
