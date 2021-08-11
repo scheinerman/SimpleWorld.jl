@@ -16,7 +16,6 @@ my_registered = [
     "RiemannComplexNumbers"
     "ShowSet"
     "SimpleDrawing"
-    "SimpleGF2"
     "SimpleLife"
     "SimplePartitions"
     "SimpleRandom"
@@ -49,13 +48,19 @@ my_unregistered = [
     "HalfSine"
     "HyperbolicDrawSimpleGraphs"
     "SimpleGraphRepresentations"
-    "SimplePosetDrawings"
     "SimplePosetRepresentations"
     "SimpleWorld"
     "IntPrint"
     "PlayingCards52"
     "FreeCell"
     "Factorions"
+    "War"
+]
+
+other_packages = [
+    "SimplePosetDrawings"
+    "SemiIsomorphism"
+    "SimpleGF2"
 ]
 
 
