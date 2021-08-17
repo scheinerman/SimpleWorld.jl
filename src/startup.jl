@@ -137,6 +137,8 @@ specify a different one that seems to be more reliable.
 """
 function change_package_server(server::String = "us-west.pkg.julialang.org")
     Base.ENV["JULIA_PKG_SERVER"] = server
+    println("Julia package server set to $server")
+    nothing
 end
 
 
