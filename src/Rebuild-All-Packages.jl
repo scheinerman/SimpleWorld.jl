@@ -7,6 +7,7 @@ my_registered = [
     "Bijections"
     "ClosedIntervals"
     "Counters"
+    "Clines"
     "HyperbolicPlane"
     "LatexPrint"
     "LinearFractionalTransformations"
@@ -38,11 +39,13 @@ my_registered = [
     "SimpleQuaternions"
     "RingLists"
     "SimplePadics"
+    "Spirograph"
+    "PlayingCards52"
+    "ImplicitGraphs"
 ]
 
 my_unregistered = [
     "SimplePlanarGraphs"
-    "ImplicitGraphs"
     "BalancedIncompleteBlockDesigns"
     "Diodes"
     "HalfSine"
@@ -51,7 +54,6 @@ my_unregistered = [
     "SimplePosetRepresentations"
     "SimpleWorld"
     "IntPrint"
-    "PlayingCards52"
     "FreeCell"
     "Factorions"
     "War"
