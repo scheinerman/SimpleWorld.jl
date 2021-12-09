@@ -45,17 +45,12 @@ my_registered = [
 ]
 
 my_unregistered = [
+    "Triangle"
     "SimplePlanarGraphs"
-    "BalancedIncompleteBlockDesigns"
     "Diodes"
     "HalfSine"
-    "HyperbolicDrawSimpleGraphs"
-    "SimpleGraphRepresentations"
-    "SimplePosetRepresentations"
     "SimpleWorld"
     "IntPrint"
-    "FreeCell"
-    "Factorions"
     "War"
 ]
 
@@ -63,6 +58,12 @@ other_packages = [
     "SimplePosetDrawings"
     "SemiIsomorphism"
     "SimpleGF2"
+    "SimpleGraphRepresentations"
+    "BalancedIncompleteBlockDesigns"
+    "SimplePosetRepresentations"
+    "HyperbolicDrawSimpleGraphs"
+    "FreeCell"
+    "Factorions"
 ]
 
 
