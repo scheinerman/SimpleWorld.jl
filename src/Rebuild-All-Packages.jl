@@ -47,8 +47,6 @@ my_registered = [
 my_unregistered = [
     "Triangle"
     "SimplePlanarGraphs"
-    "Diodes"
-    "HalfSine"
     "SimpleWorld"
     "IntPrint"
     "War"
@@ -64,6 +62,8 @@ other_packages = [
     "HyperbolicDrawSimpleGraphs"
     "FreeCell"
     "Factorions"
+    "Diodes"
+    "HalfSine"
 ]
 
 
