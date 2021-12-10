@@ -1,5 +1,6 @@
 name = "SimpleWorld"
 uuid = "5ae6dfce-4d76-5962-b232-176192dc7175"
+version = "0.0.1"
 
 [deps]
 Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"

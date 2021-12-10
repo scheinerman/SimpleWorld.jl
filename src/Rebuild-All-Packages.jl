@@ -50,15 +50,16 @@ my_unregistered = [
     "SimpleWorld"
     "IntPrint"
     "War"
+    "SimpleGF2"
+    "SimpleGraphRepresentations"
+    "SimplePosetRepresentations"
 ]
 
 other_packages = [
     "SimplePosetDrawings"
     "SemiIsomorphism"
     "SimpleGF2"
-    "SimpleGraphRepresentations"
     "BalancedIncompleteBlockDesigns"
-    "SimplePosetRepresentations"
     "HyperbolicDrawSimpleGraphs"
     "FreeCell"
     "Factorions"
@@ -69,7 +70,7 @@ other_packages = [
 
 julia_packages = [
     "Cbc"
-    "Clp"
+   # "Clp"
     "Combinatorics"
     "DataStructures"
     "Distributions"
