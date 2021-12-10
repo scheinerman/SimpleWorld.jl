@@ -58,7 +58,6 @@ my_unregistered = [
 other_packages = [
     "SimplePosetDrawings"
     "SemiIsomorphism"
-    "SimpleGF2"
     "BalancedIncompleteBlockDesigns"
     "HyperbolicDrawSimpleGraphs"
     "FreeCell"
