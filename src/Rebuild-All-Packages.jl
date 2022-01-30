@@ -69,7 +69,7 @@ other_packages = [
 
 julia_packages = [
     "Cbc"
-   # "Clp"
+    "Crayons"
     "Combinatorics"
     "DataStructures"
     "Distributions"
