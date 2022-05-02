@@ -97,6 +97,8 @@ julia_packages = [
     "PkgTemplates"
     "Documenter"
     "BenchmarkTools"
+    "OhMyREPL"
+    "HiGHS"
 ]
 
 

@@ -143,3 +143,5 @@ end
 
 
 # box_my_text("Use GraphTheory() to load graph theory packages")
+
+using OhMyREPL
