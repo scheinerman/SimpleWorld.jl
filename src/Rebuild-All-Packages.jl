@@ -17,7 +17,6 @@ my_registered = [
     "RiemannComplexNumbers"
     "ShowSet"
     "SimpleDrawing"
-    "SimpleLife"
     "SimplePartitions"
     "SimpleRandom"
     "SimpleTools"
@@ -36,12 +35,11 @@ my_registered = [
     "SimplePosetAlgorithms"
     "SimplePolynomials"
     "LinearAlgebraX"
-    "SimpleQuaternions"
     "RingLists"
     "SimplePadics"
     "Spirograph"
-    "PlayingCards52"
     "ImplicitGraphs"
+    "DataFrames"
 ]
 
 my_unregistered = [
@@ -53,6 +51,10 @@ my_unregistered = [
     "SimpleGF2"
     "SimpleGraphRepresentations"
     "SimplePosetRepresentations"
+    "SpellingBee"
+    "WordleSolver"
+    "SimpleSolver"
+    "CoinRepresentations"
 ]
 
 other_packages = [
@@ -64,6 +66,9 @@ other_packages = [
     "Factorions"
     "Diodes"
     "HalfSine"
+    "PlayingCards52"
+    "SimpleLife"
+    "SimpleQuaternions"
 ]
 
 
@@ -76,6 +81,7 @@ julia_packages = [
     "FFTW"
     "GLPK"
     "GR"
+    "Graphs"
     "Gurobi"
     "IJulia"
     "IterTools"
@@ -91,7 +97,6 @@ julia_packages = [
     "Polynomials"
     "Primes"
     "ProgressMeter"
-    "PyPlot"
     "Random"
     "Nemo"
     "PkgTemplates"
@@ -99,8 +104,9 @@ julia_packages = [
     "BenchmarkTools"
     "OhMyREPL"
     "HiGHS"
+    "CSV"
+    "NLsolve"
 ]
-
 
 
 
