@@ -39,7 +39,6 @@ my_registered = [
     "SimplePadics"
     "Spirograph"
     "ImplicitGraphs"
-    "DataFrames"
 ]
 
 my_unregistered = [
@@ -78,6 +77,7 @@ julia_packages = [
     "Combinatorics"
     "DataStructures"
     "Distributions"
+    "DataFrames"
     "FFTW"
     "GLPK"
     "GR"
