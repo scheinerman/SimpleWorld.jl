@@ -14,21 +14,17 @@ my_registered = [
     "Mods"
     "Multisets"
     "Permutations"
-    "RiemannComplexNumbers"
     "ShowSet"
     "SimpleDrawing"
     "SimplePartitions"
     "SimpleRandom"
     "SimpleTools"
-    "SimpleTropical"
-    "TwentyFour"
     "Mazes"
     "DrawSimpleGraphs"
     "ChooseOptimizer"
     "SimpleGraphs"
     "FlexLinearAlgebra"
     "SimplePosets"
-    "Sudoku"
     "DiscreteFunctions"
     "LatinSquares"
     "SimpleGraphAlgorithms"
@@ -37,7 +33,6 @@ my_registered = [
     "LinearAlgebraX"
     "RingLists"
     "SimplePadics"
-    "Spirograph"
     "ImplicitGraphs"
 ]
 
@@ -58,16 +53,12 @@ my_unregistered = [
 
 other_packages = [
     "SimplePosetDrawings"
-    "SemiIsomorphism"
     "BalancedIncompleteBlockDesigns"
     "HyperbolicDrawSimpleGraphs"
-    "FreeCell"
-    "Factorions"
-    "Diodes"
-    "HalfSine"
     "PlayingCards52"
-    "SimpleLife"
     "SimpleQuaternions"
+    "WordleSolver"
+    "SpellingBee"
 ]
 
 
