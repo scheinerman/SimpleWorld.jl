@@ -37,7 +37,6 @@ my_registered = [
 ]
 
 my_unregistered = [
-    "Triangle"
     "SimplePlanarGraphs"
     "SimpleWorld"
     "IntPrint"
@@ -97,6 +96,7 @@ julia_packages = [
     "HiGHS"
     "CSV"
     "NLsolve"
+    "Triangle"
 ]
 
 
