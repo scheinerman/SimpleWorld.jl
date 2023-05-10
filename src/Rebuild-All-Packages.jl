@@ -47,7 +47,12 @@ my_unregistered = [
     "SpellingBee"
     "WordleSolver"
     "SimpleSolver"
+    "DigitsSolver"
+    "LabelMaker"
     "CoinRepresentations"
+    "PythagoreanTriples"
+    "QuadraticRationals"
+    "RationalGenerators"
 ]
 
 other_packages = [
@@ -56,8 +61,6 @@ other_packages = [
     "HyperbolicDrawSimpleGraphs"
     "PlayingCards52"
     "SimpleQuaternions"
-    "WordleSolver"
-    "SpellingBee"
 ]
 
 
