@@ -91,6 +91,7 @@ julia_packages = [
     "Primes"
     "ProgressMeter"
     "Random"
+    "Revise"
     "Nemo"
     "PkgTemplates"
     "Documenter"
