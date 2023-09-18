@@ -34,6 +34,7 @@ my_registered = [
     "RingLists"
     "SimplePadics"
     "ImplicitGraphs"
+    "RationalGenerators"
 ]
 
 my_unregistered = [
@@ -47,12 +48,13 @@ my_unregistered = [
     "SpellingBee"
     "WordleSolver"
     "SimpleSolver"
-    "DigitsSolver"
     "LabelMaker"
     "CoinRepresentations"
     "PythagoreanTriples"
     "QuadraticRationals"
     "RationalGenerators"
+    "CayleyGraphs"
+    "BisectionSolver"
 ]
 
 other_packages = [
@@ -101,6 +103,7 @@ julia_packages = [
     "CSV"
     "NLsolve"
     "Triangle"
+    "PyPlot"
 ]
 
 
