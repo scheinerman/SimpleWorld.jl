@@ -77,6 +77,18 @@ function list_of_graph_draw()
     ]
 end
 
+function list_of_poset_theory()
+    [
+    "SimplePosets"
+    "SimplePosetAlgorithms"
+    "DrawSimplePosets"
+    "ChooseOptimizer"
+    "Gurobi"
+    "ShowSet"
+    "SimpleDrawing"
+    "Plots"
+    ]
+end
 
 
 """
@@ -99,6 +111,15 @@ function GraphTheory(draw_pkgs::Bool = true, verbose::Bool = true)
         end
     end
 end
+
+
+function PosetTheory(verbose::Bool=true)::Nothing
+    SimplePackageLoader(list_of_poset_theory(), verbose)
+    eval(Meta.parse("set_solver(Gurobi, false)"))
+    nothing
+end
+
+
 """
     box_my_text(line)
 
