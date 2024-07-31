@@ -103,7 +103,7 @@ julia_packages = [
     "CSV"
     "NLsolve"
     "Triangle"
-    "PyPlot"
+    "PkgDepencency"
 ]
 
 
