@@ -101,7 +101,8 @@ If `draw_pkgs` is set to false, don't load the drawing packages returned by  `li
 """
 function GraphTheory(draw_pkgs::Bool = true, verbose::Bool = true)
     SimplePackageLoader(list_of_graph_theory(), verbose)
-    eval(Meta.parse("use_Gurobi()"))
+    # eval(Meta.parse("use_Gurobi()"))
+    eval(Meta.parse("set_solver(Gurobi)"))
 
     if draw_pkgs
         SimplePackageLoader(list_of_graph_draw(), verbose)
