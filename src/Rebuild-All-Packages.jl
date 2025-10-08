@@ -36,6 +36,7 @@ my_registered = [
     "SimplePadics"
     "ImplicitGraphs"
     "RationalGenerators"
+    "SimplexTableaux"
 ]
 
 my_unregistered = [
