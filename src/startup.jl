@@ -79,14 +79,14 @@ end
 
 function list_of_poset_theory()
     [
-    "SimplePosets"
-    "SimplePosetAlgorithms"
-    "DrawSimplePosets"
-    "ChooseOptimizer"
-    "Gurobi"
-    "ShowSet"
-    "SimpleDrawing"
-    "Plots"
+        "SimplePosets"
+        "SimplePosetAlgorithms"
+        "DrawSimplePosets"
+        "ChooseOptimizer"
+        "Gurobi"
+        "ShowSet"
+        "SimpleDrawing"
+        "Plots"
     ]
 end
 
@@ -114,7 +114,7 @@ function GraphTheory(draw_pkgs::Bool = true, verbose::Bool = true)
 end
 
 
-function PosetTheory(verbose::Bool=true)::Nothing
+function PosetTheory(verbose::Bool = true)::Nothing
     SimplePackageLoader(list_of_poset_theory(), verbose)
     eval(Meta.parse("set_solver(Gurobi, false)"))
     nothing

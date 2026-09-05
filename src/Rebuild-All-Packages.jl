@@ -2,110 +2,76 @@
 using Pkg
 
 my_registered = [
-    "AbstractLattices"
-    "BigCombinatorics"
-    "Bijections"
-    "ClosedIntervals"
-    "Counters"
-    "Clines"
-    "HyperbolicPlane"
-    "LatexPrint"
-    "LinearFractionalTransformations"
-    "Mods"
-    "MiniMods"
-    "Multisets"
-    "Permutations"
-    "ShowSet"
-    "SimpleDrawing"
-    "SimplePartitions"
-    "SimpleRandom"
-    "SimpleTools"
-    "Mazes"
-    "DrawSimpleGraphs"
-    "ChooseOptimizer"
-    "SimpleGraphs"
-    "FlexLinearAlgebra"
-    "SimplePosets"
-    "DiscreteFunctions"
-    "LatinSquares"
-    "SimpleGraphAlgorithms"
-    "SimplePosetAlgorithms"
-    "SimplePolynomials"
-    "LinearAlgebraX"
-    "RingLists"
-    "SimplePadics"
-    "ImplicitGraphs"
-    "RationalGenerators"
-    "SimplexTableaux"
+    "AbstractLattices",
+    "BigCombinatorics",
+    "Bijections",
+    "ClosedIntervals",
+    "Counters",
+    "Clines",
+    "HasseDiagrams",
+    "LatexPrint",
+    "Mods",
+    "Multisets",
+    "Permutations",
+    "Posets",
+    "ShowSet",
+    "SimpleDrawing",
+    "SimpleRandom",
+    "SimpleTools",
+    "Mazes",
+    "DrawSimpleGraphs",
+    "ChooseOptimizer",
+    "SimpleGraphs",
+    "SimplePosets",
+    "DiscreteFunctions",
+    "SimpleGraphAlgorithms",
+    "SimplePosetAlgorithms",
+    "SimplePolynomials",
+    "LinearAlgebraX",
+    "SimplePadics",
+    "SimplexTableaux",
 ]
 
-my_unregistered = [
-    "SimplePlanarGraphs"
-    "SimpleWorld"
-    "IntPrint"
-    "War"
-    "SimpleGraphRepresentations"
-    "SimplePosetRepresentations"
-    "SpellingBee"
-    "WordleSolver"
-    "SimpleSolver"
-    "LabelMaker"
-    "CoinRepresentations"
-    "PythagoreanTriples"
-    "QuadraticRationals"
-    "RationalGenerators"
-    "CayleyGraphs"
-    "BisectionSolver"
-]
 
-other_packages = [
-    "SimplePosetDrawings"
-    "BalancedIncompleteBlockDesigns"
-    "HyperbolicDrawSimpleGraphs"
-    "PlayingCards52"
-    "SimpleQuaternions"
-]
+my_unregistered = ["SimpleWorld", "SpellingBee", "WordleSolver"]
+
 
 
 julia_packages = [
-    "Cbc"
-    "Crayons"
-    "Combinatorics"
-    "DataStructures"
-    "Distributions"
-    "DataFrames"
-    "FFTW"
-    "GLPK"
-    "GR"
-    "Graphs"
-    "Gurobi"
-    "IJulia"
-    "IterTools"
-    "JuMP"
-    "JuliaFormatter"
-    "LaTeXStrings"
-    "LightXML"
-    "LinearAlgebra"
-    "MathProgBase"
-    "Memoize"
-    "Optim"
-    "Plots"
-    "Polynomials"
-    "Primes"
-    "ProgressMeter"
-    "Random"
-    "Revise"
-    "Nemo"
-    "PkgTemplates"
-    "Documenter"
-    "BenchmarkTools"
-    "OhMyREPL"
-    "HiGHS"
-    "CSV"
-    "NLsolve"
-    "Triangle"
-    "PkgDepencency"
+    "BenchmarkTools",
+    "CSV",
+    "Combinatorics",
+    "Crayons",
+    "DataFrames",
+    "DataStructures",
+    "Distributions",
+    "Documenter",
+    "GR",
+    "Graphs",
+    "Gurobi",
+    "HiGHS",
+    "IterTools",
+    "JuMP",
+    "JuliaFormatter",
+    "LaTeXStrings",
+    "LinearAlgebra",
+    "MathProgBase",
+    "Memoize",
+    "NLsolve",
+    "Nemo",
+    "OhMyREPL",
+    "Optim",
+    "PkgDepencency",
+    "PkgTemplates",
+    "Plots",
+    "Polynomials",
+    "Primes",
+    "ProgressMeter",
+    "Random",
+    "Revise",
+    "Triangle",
 ]
+
 
 
 
