@@ -164,7 +164,6 @@ function change_package_server(server::String = "us-west.pkg.julialang.org")
 end
 
 
-# box_my_text("Use GraphTheory() to load graph theory packages")
+# box_my_text("usings GraphTheory() to load graph theory packages")
 
 using OhMyREPL
-# enable_autocomplete_brackets(false)  # fixes a problem with OhMyREPL & Julia 1.10
