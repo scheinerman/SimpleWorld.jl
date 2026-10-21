@@ -4,7 +4,6 @@ using Pkg
 my_registered = [
     "AbstractLattices",
     "BigCombinatorics",
-    "Bijections",
     "ClosedIntervals",
     "Counters",
     "Clines",
@@ -14,7 +13,6 @@ my_registered = [
     "Multisets",
     "Permutations",
     "Posets",
-    "ShowSet",
     "SimpleDrawing",
     "SimpleRandom",
     "SimpleTools",
@@ -29,7 +27,7 @@ my_registered = [
     "SimplePolynomials",
     "LinearAlgebraX",
     "SimplePadics",
-    "SimplexTableaux",
+    "SimplexTableaux"
 ]
 
 
@@ -38,7 +36,7 @@ my_unregistered = ["SimpleWorld", "SpellingBee", "WordleSolver"]
 
 
 julia_packages = [
-    "BenchmarkTools",
+    "BenchmarkTools",     "Bijections",
     "CSV",
     "Combinatorics",
     "Crayons",
